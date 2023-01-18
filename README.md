@@ -1,7 +1,7 @@
 # Factura Peru UI/UX [![stability][0]][1]
 
-El presente repositorio tiene por intencion proponer la mejor interfaz posible para la generacion de un comprobante de pago en peru (Factura), aplicando UX, los 
-10 principios jakob nielsen, y parte de lo aprendido en el curso de interaccion humano computador, como trabajo de la UNAMBA - PERU
+El presente repositorio tiene por intencion proponer la mejor interfaz posible para la generacion de un comprobante de pago en PERÚ (Factura), aplicando UX, **los 
+10 principios jakob nielsen**, y parte de lo aprendido en el curso de **Interaccion humano computador**, como trabajo de la UNAMBA - PERU
 
 ## What will I find in this Repo?
 En este repo encontraras un proyecto con recursos estaticos, con fines de solo plasmar la interfaz, tales como
@@ -10,6 +10,13 @@ En este repo encontraras un proyecto con recursos estaticos, con fines de solo p
 - HTML
 - JS
 
+## How to install?
+
+Solo es clonar el repositorio y abrir el archivo `index.html`
+
+```bash
+git clone git@github.com:AlbertPF/Factura-uiux.git
+```
 
 ## Resources
 https://diegoamorin.com/10-principios-usabilidad/
