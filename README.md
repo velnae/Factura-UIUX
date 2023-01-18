@@ -3,6 +3,11 @@
 El presente repositorio tiene por intencion proponer la mejor interfaz posible para la generacion de un comprobante de pago en PERÚ (Factura), aplicando UX, **los 
 10 principios jakob nielsen**, y parte de lo aprendido en el curso de **Interaccion humano computador**, como trabajo de la UNAMBA - PERU
 
+## DEMO
+El repo esta levantado con **github pages** y un dominio gratuito conectado a travez de **cloudflare** para generar el **SSL**:
+
+https://factura-uiux.tk
+
 ## What will I find in this Repo?
 En este repo encontraras un proyecto con recursos estaticos, con fines de solo plasmar la interfaz, tales como
 
