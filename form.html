@@ -1708,119 +1708,99 @@
 
 				<section role="main" class="content-body content-body-modern mt-0">
 					<header class="page-header page-header-left-inline-breadcrumb">
-						<h2 class="font-weight-bold text-6">Registrar Venta</h2>
-						<div class="right-wrapper">
+						<div class="left-wrapper">
 							<ol class="breadcrumbs">
 
-								<li><span>Home</span></li>
+								<li><span>Rayon</span></li>
 
-								<li><span>eCommerce</span></li>
-
-								<li><span>Orders</span></li>
+								<li><span>Venta</span></li>
 
 							</ol>
 
-							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+							<a class="sidebar-left-toggle" data-open="sidebar-left" style="margin-left: 5px;"><i class="fas fa-chevron-right" style="margin-top:15px"></i></a>
 						</div>
+
+						<h2 class="font-weight-bold text-6">Registrar Venta</h2>
 					</header>
 
 					<!-- start: page -->
 					<form class="order-details action-buttons-fixed" method="post">
 						<div class="row">
-							<div class="col-xl-4 mb-4 mb-xl-0">
+							<div class="col-xl-7 mb-7 mb-xl-0">
 
 								<div class="card card-modern">
 									<div class="card-header">
-										<h2 class="card-title">General</h2>
+										<h2 class="card-title">Datos del cliente</h2>
 									</div>
 									<div class="card-body">
 										<div class="form-row">
-											<div class="form-group col mb-3">
-												<label>Status</label>
-												<select class="form-control form-control-modern" name="orderStatus" required>
-													<option value="on-hold" selected>On Hold</option>
-													<option value="pending">Pending Payment</option>
-													<option value="processing">Processing</option>
-													<option value="completed">Completed</option>
-													<option value="cancelled">Cancelled</option>
-													<option value="refunded">Refunded</option>
-													<option value="failed">Failed</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-row">
-											<div class="form-group col mb-3">
-												<label>Date Created</label>
-												<div class="date-time-field">
-													<div class="date">
-														<input type="text" class="form-control form-control-modern" name="orderDate" value="2019-11-21" required data-plugin-datepicker data-plugin-options='{"orientation": "bottom", "format": "yyyy-mm-dd"}' />
-													</div>
-													<div class="time">
-														<span class="px-2">@</span>
-														<input type="text" class="form-control form-control-modern text-center" name="orderTimeHour" value="10" required />
-														<span class="px-2">:</span>
-														<input type="text" class="form-control form-control-modern text-center" name="orderTimeMin" value="28" required />
-													</div>
+											<div class="form-group row pb-2">
+												<label class="col-2 control-label pt-2" for="inputDefault">DNI/RUC : </label>
+												<div class="col-8">
+													<input type="text" class="form-control" id="inputDefault" value="20564556781">
 												</div>
+												<button type="button" class="col-2 btn btn-primary ">Buscar</button>
 											</div>
 										</div>
+
 										<div class="form-row">
-											<div class="form-group col mb-3">
-												<label>Customer</label>
-												<select class="form-control form-control-modern" name="orderCustomer" required data-plugin-selectTwo>
-													<option value="21" selected>John Doe</option>
-													<option value="33">Monica Doe</option>
-													<option value="55">Robert Doe</option>
-													<option value="60">Tim Doe</option>
-												</select>
+											<div class="form-group row pb-2">
+												<label class="col-2 control-label pt-2" for="inputDefault2">Cliente : </label>
+												<div class="col-8">
+													<input type="text" class="form-control" id="inputDefault2" value="INVERSIONES HERMANOS POLLOS  S.A.C.">
+												</div>
+												<button type="button" class="col-2 btn btn-primary ">Editar</button>
 											</div>
 										</div>
 									</div>
 								</div>
 
 							</div>
-							<div class="col-xl-8">
+							<div class="col-xl-5">
 
 								<div class="card card-modern">
 									<div class="card-header">
-										<h2 class="card-title">Addresses</h2>
+										<h2 class="card-title">Datos del documento</h2>
 									</div>
 									<div class="card-body">
 										<div class="row">
-											<div class="col-xl-auto me-xl-5 pe-xl-5 mb-4 mb-xl-0">
-												<h3 class="text-color-dark font-weight-bold text-4 line-height-1 mt-0 mb-3">BILLING</h3>
-												<ul class="list list-unstyled list-item-bottom-space-0">
-													<li>Street Name Example</li>
-													<li>1234</li>
-													<li>Detroit</li>
-													<li>Michigan</li>
-													<li>93218</li>
-													<li>USA</li>
-												</ul>
-												<strong class="d-block text-color-dark">Email address:</strong>
-												<a href="mailto:johndoe@domain.com">johndoe@domain.com</a>
-												<strong class="d-block text-color-dark mt-3">Phone:</strong>
-												<a href="tel:+5551234" class="text-color-dark">555-1234</a>
+											<div class="btn-group d-flex" role="group">
+												<a class="btn btn-info w-100" role="button">Factura</a>
+												<a class="btn btn-default w-100" role="button">Boleta</a>
+												<a class="btn btn-default w-100" role="button">Ticket</a>
 											</div>
-											<div class="col-xl-auto ps-xl-5">
-												<h3 class="font-weight-bold text-color-dark text-4 line-height-1 mt-0 mb-3">SHIPPING</h3>
-												<ul class="list list-unstyled list-item-bottom-space-0">
-													<li>Street Name Example</li>
-													<li>1234</li>
-													<li>Detroit</li>
-													<li>Michigan</li>
-													<li>93218</li>
-													<li>USA</li>
-												</ul>
-												<strong class="d-block text-color-dark">Email address:</strong>
-												<a href="mailto:johndoe@domain.com">johndoe@domain.com</a>
-												<strong class="d-block text-color-dark mt-3">Phone:</strong>
-												<a href="tel:+5551234" class="text-color-dark">555-1234</a>
+										</div>
+
+										<div class="row mt-2">
+											<div class="col-5">
+												<div class="form-group row pb-2" >
+													<label class="col-4 control-label pt-2">Serie : </label>
+													<div class="col-8">
+														<select class="form-control">
+															<option>F001</option>
+															<option>F002</option>
+															<option>F003</option>
+														</select>
+													</div>
+												</div>
+
+											</div>
+											<div class="col-7">
+												<div class="form-group row">
+													<label class="col-3 control-label pt-2">Fecha : </label>
+													<div class="col-9">
+														<div class="input-group">
+														<span class="input-group-text">
+															<i class="fas fa-calendar-alt"></i>
+														</span>
+															<input type="text" data-plugin-datepicker="" class="form-control">
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 						<div class="row">
