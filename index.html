@@ -364,7 +364,8 @@
         <!-- end: sidebar -->
 
         <section role="main" class="content-body content-body-modern mt-0">
-            <header class="page-header page-header-left-inline-breadcrumb" style="box-shadow: 1px 1px 1px #333; top: 55px;">
+            <header class="page-header page-header-left-inline-breadcrumb"
+                    style="box-shadow: 1px 1px 1px #333; top: 55px;">
                 <div class="left-wrapper">
                     <ol class="breadcrumbs">
 
@@ -393,23 +394,30 @@
                             <div class="card-body">
                                 <div class="form-row">
                                     <div class="form-group row pb-2">
-                                        <label class="col-2 control-label pt-2" for="inputDefault">DNI/RUC : </label>
+                                        <label class="col-2 control-label pt-2" for="inp-buscar-cliente"><span
+                                                id="lbl-documento-tipo">RUC :</span> <span
+                                                class="required">*</span></label>
                                         <div class="col-8">
-                                            <input type="text" class="form-control" id="inputDefault"
-                                                   value="20564556781">
+                                            <input type="text" class="form-control" id="inp-buscar-cliente"
+                                                   maxlength="11" required>
                                         </div>
-                                        <button type="button" class="col-2 btn btn-primary ">Buscar</button>
+                                        <button type="button" class="col-2 btn btn-primary" id="btn-buscar-cliente">
+                                            Buscar
+                                        </button>
                                     </div>
                                 </div>
 
                                 <div class="form-row">
                                     <div class="form-group row pb-2">
-                                        <label class="col-2 control-label pt-2" for="inputDefault2">Cliente : </label>
+                                        <label class="col-2 control-label pt-2" for="cliente-descripcion">Cliente
+                                            : </label>
                                         <div class="col-8">
-                                            <input type="text" class="form-control" id="inputDefault2"
-                                                   value="INVERSIONES HERMANOS POLLOS  S.A.C.">
+                                            <input type="text" class="form-control" id="cliente-descripcion" disabled
+                                                   style="text-transform: uppercase;">
                                         </div>
-                                        <button type="button" class="col-2 btn btn-primary" data-bs-toggle="modal" href="#exampleModal">Editar</button>
+                                        <button type="button" class="col-2 btn btn-primary" data-bs-toggle="modal"
+                                                href="#exampleModal" id="btn-editar-cliente">Editar
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -424,9 +432,14 @@
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="btn-group d-flex" role="group">
-                                        <a class="btn btn-primary w-100" role="button">Factura</a>
-                                        <a class="btn btn-default w-100" role="button">Boleta</a>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
+                                               autocomplete="off" checked>
+                                        <label class="btn btn-outline-primary" for="rdo-factura">Factura</label>
+
+                                        <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
+                                               autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="rdo-boleta">Boleta</label>
                                     </div>
                                 </div>
 
@@ -452,7 +465,7 @@
 													<span class="input-group-text">
 														<i class="fas fa-calendar-alt"></i>
 													</span>
-                                                    <input type="date" class="form-control">
+                                                    <input type="date" class="form-control" value="2023-01-20" disabled>
                                                 </div>
                                             </div>
                                         </div>
@@ -530,6 +543,7 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless table-striped mb-0"
+                                           id="tbl-productos"
                                            style="min-width: 380px;">
                                         <thead>
                                         <tr>
@@ -541,38 +555,46 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="ps-4">
-                                                    <input type="text" class="form-control" value="1.00" style="text-align: right">
-                                                </td>
-                                                <td><a href="#">
-                                                    <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido 250Gb</strong></a></td>
-                                                <td class="text-end">
-                                                    <input type="text" class="form-control" value="2699.00" style="text-align: right">
-                                                </td>
-                                                <td class="text-end">2699.00</td>
-                                                <td class="text-end">
-                                                    <a href="#" class="btn btn-danger" title="Eliminar Item">
-                                                        <i class="fa fa-solid fa-trash"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="ps-4">
-                                                    <input type="text" class="form-control" value="1.00" style="text-align: right">
-                                                </td>
-                                                <td><a href="#">
-                                                    <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido 250Gb</strong></a></td>
-                                                <td class="text-end">
-                                                    <input type="text" class="form-control" value="2699.00" style="text-align: right">
-                                                </td>
-                                                <td class="text-end">2699.00</td>
-                                                <td class="text-end">
-                                                    <a href="#" class="btn btn-danger" title="Eliminar Item">
-                                                        <i class="fa fa-solid fa-trash"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td class="ps-4">
+                                                <input type="text" class="form-control" value="1.00"
+                                                       style="text-align: right">
+                                            </td>
+                                            <td><a href="#">
+                                                <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido
+                                                    250Gb</strong></a></td>
+                                            <td class="text-end">
+                                                <input type="text" class="form-control" value="2699.00"
+                                                       style="text-align: right">
+                                            </td>
+                                            <td class="text-end">2699.00</td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-danger" title="Quitar producto"
+                                                   class="btn-quitar-producto">
+                                                    <i class="fa fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4">
+                                                <input type="text" class="form-control" value="1.00"
+                                                       style="text-align: right">
+                                            </td>
+                                            <td><a href="#">
+                                                <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido
+                                                    250Gb</strong></a></td>
+                                            <td class="text-end">
+                                                <input type="text" class="form-control" value="2699.00"
+                                                       style="text-align: right">
+                                            </td>
+                                            <td class="text-end">2699.00</td>
+                                            <td class="text-end">
+                                                <a href="#" class="btn btn-danger" title="Quitar producto"
+                                                   class="btn-quitar-producto">
+                                                    <i class="fa fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -589,7 +611,7 @@
                                     <div class="col-auto me-5">
                                         <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
                                         <span class="d-flex align-items-center">
-												Igv
+												Igv 18%
 												<i class="fas fa-chevron-right text-color-primary px-3"></i>
 												<b class="text-color-dark text-xxs">971.64</b>
 											</span>
@@ -730,19 +752,6 @@
                                 <label for="inputCelular">Celular</label>
                                 <input type="text" class="form-control" id="inputCelular" placeholder="987654321">
                             </div>
-                            <!-- <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </div> -->
                         </div>
                     </form>
                 </div>
@@ -774,6 +783,7 @@
 
 <!-- Specific Page Vendor -->
 <script src="vendor/select2/js/select2.js"></script>
+<script src="vendor/jquery-validation/jquery.validate.js"></script>
 
 <!-- Theme Base, Components and Settings -->
 <script src="js/theme.js"></script>
@@ -787,30 +797,62 @@
 <!-- Examples -->
 <script src="js/examples/examples.header.menu.js"></script>
 <script src="js/examples/examples.ecommerce.orders.detail.js"></script>
-
-
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
 <script>
     $(document).ready(function () {
-        $('#table_id').DataTable({
-            "order": [[1, "asc"]],
-            "language": {
-                "lengthMenu": "Mostrar _MENU_ registros por pagina",
-                "zeroRecords": "No se encontraron resultados en su busqueda",
-                "searchPlaceholder": "Buscar...",
-                "info": "Mostrando registros de _START_ al _END_ de un total de  _TOTAL_ registros",
-                "infoEmpty": "No existen registros",
-                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "search": "Buscar:",
-                "paginate": {
-                    "first": "Primero",
-                    "last": "Último",
-                    "next": "Siguiente",
-                    "previous": "Anterior"
-                },
+        $('input[name="rdo-documento"]').on('click', function () {
+            let rdo_doc = $(this).attr('id');
+            let $lblDocumentoTipo = $('#lbl-documento-tipo');
+
+            if (rdo_doc === 'rdo-factura') {
+                $lblDocumentoTipo.text('RUC : ');
+            } else {
+                $lblDocumentoTipo.text('RUC / DNI : ');
             }
         });
+
+        $('#btn-buscar-cliente').on('click', function () {
+            let $clienteDescripcion = $('#cliente-descripcion');
+            let $clienteDocumento = $('#inp-buscar-cliente');
+
+            let cliente_dni = {
+                'documento': '71632611',
+                'descripcion': 'ZEILU MASSIEL MOREANO FALCON',
+                'direccion': 'Abancay Abancay Apúrimac'
+            }
+
+            let cliente_ruc = {
+                'documento': '20100190797',
+                'descripcion': 'Leche Gloria Sociedad Anonima - Gloria S.A.',
+                'direccion': 'Anta Catalina La victoria, Lima, Peru'
+            }
+
+            let cliente = {};
+
+            switch ($clienteDocumento.val()) {
+                case '71632611':
+                    cliente = cliente_dni;
+                    break;
+
+                case '20100190797':
+                    cliente = cliente_ruc;
+                    break;
+
+                default:
+                    $('#btn-editar-cliente').trigger('click');
+                    return;
+            }
+
+            $clienteDescripcion.val(cliente.descripcion);
+        });
+
+        $('#tbl-productos').on('click', '.btn-quitar-producto', function (e) {
+            // e.preventDefault();
+            alert()
+            $(this).parent().parent().remove();
+        })
     });
+
+
 </script>
 </body>
 </html>
