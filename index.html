@@ -427,7 +427,6 @@
                                     <div class="btn-group d-flex" role="group">
                                         <a class="btn btn-primary w-100" role="button">Factura</a>
                                         <a class="btn btn-default w-100" role="button">Boleta</a>
-                                        <a class="btn btn-default w-100" role="button">Ticket</a>
                                     </div>
                                 </div>
 
@@ -463,12 +462,70 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card card-modern">
+                            <div class="card-body">
+                                <div class="form-group row pb-3">
+                                    <label class="col-lg-3 control-label text-lg-end pt-2">Buscador de producto</label>
+                                    <div class="col-lg-6">
+                                        <select multiple data-plugin-selectTwo class="form-control populate">
+                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                            </optgroup>
+                                            <optgroup label="Pacific Time Zone">
+                                                <option value="CA">California</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                            </optgroup>
+                                            <optgroup label="Mountain Time Zone">
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                            </optgroup>
+                                            <optgroup label="Central Time Zone">
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <button type="button" class="mb-1 me-1 btn btn-primary">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col">
 
                         <div class="card card-modern">
                             <div class="card-header">
-                                <h2 class="card-title">Products</h2>
+                                <h2 class="card-title">Productos</h2>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -476,219 +533,71 @@
                                            style="min-width: 380px;">
                                         <thead>
                                         <tr>
-                                            <th width="8%" class="ps-4">ID</th>
-                                            <th width="65%">Name</th>
-                                            <th width="5%" class="text-end">Cost</th>
-                                            <th width="7%" class="text-end">Qty</th>
-                                            <th width="5%" class="text-end">Total</th>
+                                            <th width="6%" class="ps-4">Cantidad</th>
+                                            <th width="65%">Descripción</th>
+                                            <th width="7%" class="text-end">Valor Unitario</th>
+                                            <th width="7%" class="text-end">Valor Total</th>
+                                            <th width="5%" class="text-end">Acción</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>191</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name
-                                                Example</strong></a></td>
-                                            <td class="text-end">$99</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$99</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>192</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name Example
-                                                2</strong></a></td>
-                                            <td class="text-end">$50</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$50</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4"><a href="ecommerce-products-form.html"><strong>193</strong></a>
-                                            </td>
-                                            <td><a href="ecommerce-products-form.html"><strong>Product Name Example
-                                                3</strong></a></td>
-                                            <td class="text-end">$132</td>
-                                            <td class="text-end">1</td>
-                                            <td class="text-end">$132</td>
-                                        </tr>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <input type="text" class="form-control" value="1.00" style="text-align: right">
+                                                </td>
+                                                <td><a href="#">
+                                                    <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido 250Gb</strong></a></td>
+                                                <td class="text-end">
+                                                    <input type="text" class="form-control" value="2699.00" style="text-align: right">
+                                                </td>
+                                                <td class="text-end">2699.00</td>
+                                                <td class="text-end">
+                                                    <a href="#" class="btn btn-danger" title="Eliminar Item">
+                                                        <i class="fa fa-solid fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <input type="text" class="form-control" value="1.00" style="text-align: right">
+                                                </td>
+                                                <td><a href="#">
+                                                    <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido 250Gb</strong></a></td>
+                                                <td class="text-end">
+                                                    <input type="text" class="form-control" value="2699.00" style="text-align: right">
+                                                </td>
+                                                <td class="text-end">2699.00</td>
+                                                <td class="text-end">
+                                                    <a href="#" class="btn btn-danger" title="Eliminar Item">
+                                                        <i class="fa fa-solid fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
 
                                 <div class="row justify-content-end flex-column flex-lg-row my-3">
                                     <div class="col-auto me-5">
-                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Items Subtotal</h3>
+                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
                                         <span class="d-flex align-items-center">
-												3 Items
+												2 Productos
 												<i class="fas fa-chevron-right text-color-primary px-3"></i>
-												<b class="text-color-dark text-xxs">$298.00</b>
+												<b class="text-color-dark text-xxs">5,398</b>
 											</span>
                                     </div>
                                     <div class="col-auto me-5">
-                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Shipping</h3>
+                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
                                         <span class="d-flex align-items-center">
-												Flat Rate
+												Igv
 												<i class="fas fa-chevron-right text-color-primary px-3"></i>
-												<b class="text-color-dark text-xxs">$20.00</b>
+												<b class="text-color-dark text-xxs">971.64</b>
 											</span>
                                     </div>
                                     <div class="col-auto">
-                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Order Total</h3>
+                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
                                         <span class="d-flex align-items-center justify-content-lg-end">
-												<strong class="text-color-dark text-5">$318.00</strong>
+												<strong class="text-color-dark text-5">6,369.64</strong>
 											</span>
                                     </div>
                                 </div>
