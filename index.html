@@ -579,6 +579,31 @@
                     </div>
                 </div>
 
+				<style>
+					.dataTables_wrapper .dataTables_length select{
+						padding: 0 20px;
+					}
+					.color-red{
+						color: red;
+					}
+					.table-responsive{
+						overflow-x: hidden;
+						padding: 0 20px;
+					}
+					.pago{
+						padding: 20px 0;
+					}
+					.btn-pago{
+						height: 100%;
+					}
+					.productos_buscar{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+					}
+				</style>
+				<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
 				<div class="row">
 					<div class="col">
 
@@ -715,32 +740,10 @@
 									</table>
 								</div>
 								<!-- Tabla de productos::End -->
-								<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+								<!--<script src="https://code.jquery.com/jquery-3.6.3.min.js"
 								integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-								crossorigin="anonymous"></script>
-								<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
-							<script>
-								$(document).ready(function () {
-									$('#table_id').DataTable({
-										"order": [[ 1, "asc" ]],
-										"language": {
-											"lengthMenu": "Mostrar _MENU_ registros por pagina",
-											"zeroRecords": "No se encontraron resultados en su busqueda",
-											"searchPlaceholder": "Buscar...",
-											"info": "Mostrando registros de _START_ al _END_ de un total de  _TOTAL_ registros",
-											"infoEmpty": "No existen registros",
-											"infoFiltered": "(filtrado de un total de _MAX_ registros)",
-											"search": "Buscar:",
-											"paginate": {
-												"first": "Primero",
-												"last": "Último",
-												"next": "Siguiente",
-												"previous": "Anterior"
-											},
-										}
-									});
-								});
-							</script>
+								crossorigin="anonymous"></script>-->
+								
 								<div class="row justify-content-end flex-column flex-lg-row my-3">
 									<div class="col-auto me-5">
 										<h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
@@ -775,23 +778,23 @@
 					</div>
 				</div>
 
-				<div class="row ">
-                        <div class="col-12 col-md-auto ms-md-auto mt-3 mt-md-0 ms-auto">
-                        </div>
-                        <div class="col-12 col-md-auto">
-                            <button type="submit"
-                                class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1 btn-pago"
-                                data-loading-text="Loading...">
-                                Proceder al Pago <i class="fas fa-chevron-right ms-2"></i>
-                            </button>
-                        </div>
-                        <div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
-                            <a href="ecommerce-orders-list.html"
-                                class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar
-                            </a>
-                        </div>
-                        
-                    </div>
+				<div class="row action-buttons pago">
+					<div class="col-12 col-md-auto ms-md-auto mt-3 mt-md-0 ms-auto">
+					</div>
+					<div class="col-12 col-md-auto">
+						<button type="submit"
+							class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1 btn-pago"
+							data-loading-text="Loading...">
+							Proceder al Pago <i class="fas fa-chevron-right ms-2"></i>
+						</button>
+					</div>
+					<div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
+						<a href="ecommerce-orders-list.html"
+							class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar
+						</a>
+					</div>
+					
+				</div>
             </form>
 			
             <!-- end: page -->
@@ -955,5 +958,30 @@
 <script src="js/examples/examples.header.menu.js"></script>
 <script src="js/examples/examples.ecommerce.orders.detail.js"></script>
 
+
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+							<script>
+								$(document).ready(function () {
+									$('#table_id').DataTable({
+										"order": [[ 1, "asc" ]],
+										"language": {
+											"lengthMenu": "Mostrar _MENU_ registros por pagina",
+											"zeroRecords": "No se encontraron resultados en su busqueda",
+											"searchPlaceholder": "Buscar...",
+											"info": "Mostrando registros de _START_ al _END_ de un total de  _TOTAL_ registros",
+											"infoEmpty": "No existen registros",
+											"infoFiltered": "(filtrado de un total de _MAX_ registros)",
+											"search": "Buscar:",
+											"paginate": {
+												"first": "Primero",
+												"last": "Último",
+												"next": "Siguiente",
+												"previous": "Anterior"
+											},
+										}
+									});
+								});
+							</script>
 </body>
 </html>
