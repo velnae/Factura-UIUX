@@ -16,6 +16,8 @@
 	<!-- Web Fonts  -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet" type="text/css">
 
+	
+
 	<!-- Vendor CSS -->
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="vendor/animate/animate.compat.css">
@@ -25,6 +27,7 @@
 	<link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
 	<link rel="stylesheet" href="vendor/select2/css/select2.css" />
 	<link rel="stylesheet" href="vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />
+	<link rel="stylesheet" href="vendor/pnotify/pnotify.custom.css" />
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="css/theme.css" />
@@ -517,7 +520,10 @@
 										<div class="col-8">
 											<input type="text" class="form-control" id="inputDefault2" value="INVERSIONES HERMANOS POLLOS  S.A.C.">
 										</div>
-										<button type="button" class="col-2 btn btn-primary ">Editar</button>
+										<!-- <button type="button" class="col-2 btn btn-primary " href="#modalHeaderColorPrimary">Editar</button> -->
+										<button type="button" class=" col-2 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+											Editar
+										</button>
 									</div>
 								</div>
 							</div>
@@ -732,6 +738,66 @@
 			</div>
 		</div>
 	</aside>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header"  style="background-color:#337ab7" >
+				<h4 class="modal-title" id="exampleModalLabel" style=" font-weight: bold; color:#f8f5f5 ">Cliente</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #f8f5f5f0;" ></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<div class="form-group col-md-11">
+							<label for="inputCliente">Cliente</label>
+							<input type="cliente" class="form-control" id="inputCliente4" placeholder="Cliente" readonly>
+						</div>
+						<div class="form-group col-md-6 mb-3 mb-lg-0">
+							<label for="inputDNI">DNI / RUC</label>
+							<input type="dni" class="form-control" id="inputdni4" placeholder="DNI / RUC" readonly>
+						</div>
+						<div class="form-group col-md-12 ">
+							<label for="inputDireccion">Dirección</label>
+							<input type="text" class="form-control" id="inputDireccion" placeholder="Urb. San Luis Baja">
+						</div>
+						<div class="form-group col-md-8">
+							<label for="inputEmail4">Email</label>
+							<input type="email" class="form-control" id="inputEmail4" placeholder="empresa@gmail.com">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputCelular">Celular</label>
+							<input type="text" class="form-control" id="inputCelular" placeholder="987654321">
+						</div>
+						<!-- <div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputCity">City</label>
+								<input type="text" class="form-control" id="inputCity">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">State</label>
+								<select id="inputState" class="form-control">
+									<option selected>Choose...</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div> -->
+				    </div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<div class="row">
+					<div class="col-md-12 text-end">
+						<button class="btn btn-primary modal-confirm">Guardar</button>
+						<button class="btn btn-default modal-dismiss" data-bs-dismiss="modal">Cancelar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
 
 </section>
 
