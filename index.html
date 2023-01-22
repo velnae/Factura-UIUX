@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="modern fixed has-top-menu has-left-sidebar-half">
+<html class="modern fixed has-top-menu has-left-sidebar-half sidebar-left-collapsed">
 <head>
 
     <!-- Basic -->
@@ -52,7 +52,7 @@
     <header class="header header-nav-menu header-nav-links">
         <div class="logo-container">
             <a href="index.html" class="logo">
-                <img src="img/logo-custom.png" class="logo-image" width="90" height="24" alt="Porto Admin"/>
+                <img src="img/logo-custom.png" class="logo-image" width="90" height="24" alt="Rayon"/>
             </a>
             <button class="btn header-btn-collapse-nav d-lg-none" data-bs-toggle="collapse"
                     data-bs-target=".header-nav">
@@ -383,89 +383,91 @@
             </header>
 
             <!-- start: page -->
-            <form class="order-details action-buttons-fixed" method="post">
-                <div class="row">
-                    <div class="col-xl-7 mb-7 mb-xl-0">
 
-                        <div class="card card-modern">
-                            <div class="card-header">
-                                <h2 class="card-title">Datos del cliente</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="form-row">
-                                    <div class="form-group row pb-2">
-                                        <label class="col-2 control-label pt-2" for="inp-buscar-cliente"><span
-                                                id="lbl-documento-tipo">RUC :</span> <span
-                                                class="required">*</span></label>
-                                        <div class="col-8">
-                                            <input type="text" class="form-control" id="inp-buscar-cliente"
-                                                   maxlength="11" required>
-                                        </div>
-                                        <button type="button" class="col-2 btn btn-primary" id="btn-buscar-cliente">
-                                            Buscar
-                                        </button>
-                                    </div>
+            <div class="row">
+
+                <form class="order-details action-buttons-fixed col-7" method="post">
+                    <div class="row">
+                        <div class="col-xl-7 mb-7 mb-xl-0">
+                            <div class="card card-modern">
+                                <div class="card-header">
+                                    <h2 class="card-title">Datos del cliente</h2>
                                 </div>
-
-                                <div class="form-row">
-                                    <div class="form-group row pb-2">
-                                        <label class="col-2 control-label pt-2" for="cliente-descripcion">Cliente
-                                            : </label>
-                                        <div class="col-8">
-                                            <input type="text" class="form-control" id="cliente-descripcion" disabled
-                                                   style="text-transform: uppercase;">
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group row pb-2">
+                                            <label class="col-2 control-label pt-2" for="inp-buscar-cliente"><span
+                                                    id="lbl-documento-tipo">RUC :</span> <span
+                                                    class="required">*</span></label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="inp-buscar-cliente"
+                                                       maxlength="11" required>
+                                            </div>
+                                            <button type="button" class="col-2 btn btn-primary" id="btn-buscar-cliente">
+                                                Buscar
+                                            </button>
                                         </div>
-                                        <button type="button" class="col-2 btn btn-primary" data-bs-toggle="modal"
-                                                href="#exampleModal" id="btn-editar-cliente">Editar
-                                        </button>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group row pb-2">
+                                            <label class="col-2 control-label pt-2" for="cliente-descripcion">Cliente
+                                                : </label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="cliente-descripcion" disabled
+                                                       style="text-transform: uppercase;">
+                                            </div>
+                                            <button type="button" class="col-2 btn btn-primary" data-bs-toggle="modal"
+                                                    href="#exampleModal" id="btn-editar-cliente">Editar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-5">
 
-                    </div>
-                    <div class="col-xl-5">
-
-                        <div class="card card-modern">
-                            <div class="card-header">
-                                <h2 class="card-title">Datos del documento</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                        <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
-                                               autocomplete="off" checked>
-                                        <label class="btn btn-outline-primary" for="rdo-factura">Factura</label>
-
-                                        <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
-                                               autocomplete="off">
-                                        <label class="btn btn-outline-primary" for="rdo-boleta">Boleta</label>
-                                    </div>
+                            <div class="card card-modern">
+                                <div class="card-header">
+                                    <h2 class="card-title">Datos del documento</h2>
                                 </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
+                                                   autocomplete="off" checked>
+                                            <label class="btn btn-outline-primary" for="rdo-factura">Factura</label>
 
-                                <div class="row mt-2">
-                                    <div class="col-5">
-                                        <div class="form-group row pb-2">
-                                            <label class="col-4 control-label pt-2">Serie : </label>
-                                            <div class="col-8">
-                                                <select class="form-control">
-                                                    <option>F001</option>
-                                                    <option>F002</option>
-                                                    <option>F003</option>
-                                                </select>
-                                            </div>
+                                            <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
+                                                   autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="rdo-boleta">Boleta</label>
                                         </div>
-
                                     </div>
-                                    <div class="col-7">
-                                        <div class="form-group row">
-                                            <label class="col-3 control-label pt-2">Fecha : </label>
-                                            <div class="col-9">
-                                                <div class="input-group">
-													<span class="input-group-text">
-														<i class="fas fa-calendar-alt"></i>
-													</span>
-                                                    <input type="date" class="form-control" value="2023-01-20" disabled>
+
+                                    <div class="row mt-2">
+                                        <div class="col-5">
+                                            <div class="form-group row pb-2">
+                                                <label class="col-4 control-label pt-2">Serie : </label>
+                                                <div class="col-8">
+                                                    <select class="form-control">
+                                                        <option>F001</option>
+                                                        <option>F002</option>
+                                                        <option>F003</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="form-group row">
+                                                <label class="col-3 control-label pt-2">Fecha : </label>
+                                                <div class="col-9">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">
+                                                            <i class="fas fa-calendar-alt"></i>
+                                                        </span>
+                                                        <input type="date" class="form-control" value="2023-01-20" disabled>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -474,162 +476,127 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="card card-modern">
-                            <div class="card-body">
-                                <div class="form-group row pb-3">
-                                    <label class="col-lg-3 control-label text-lg-end pt-2">Buscador de producto</label>
-                                    <div class="col-lg-6">
-                                        <select multiple data-plugin-selectTwo class="form-control populate">
-                                            <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                <option value="AK">Alaska</option>
-                                                <option value="HI">Hawaii</option>
-                                            </optgroup>
-                                            <optgroup label="Pacific Time Zone">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-modern">
+                                <div class="card-body">
+                                    <div class="form-group row pb-3">
+                                        <label class="col-lg-3 control-label text-lg-end pt-2">Buscador de producto</label>
+                                        <div class="col-lg-6">
+                                            <select multiple data-plugin-selectTwo class="form-control populate">
                                                 <option value="CA">California</option>
                                                 <option value="NV">Nevada</option>
                                                 <option value="OR">Oregon</option>
                                                 <option value="WA">Washington</option>
-                                            </optgroup>
-                                            <optgroup label="Mountain Time Zone">
-                                                <option value="AZ">Arizona</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="WY">Wyoming</option>
-                                            </optgroup>
-                                            <optgroup label="Central Time Zone">
-                                                <option value="AL">Alabama</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="WI">Wisconsin</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <button type="button" class="mb-1 me-1 btn btn-primary">Agregar</button>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <button type="button" class="mb-1 me-1 btn btn-primary">Agregar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
+                    <div class="row">
+                        <div class="col">
 
-                        <div class="card card-modern">
-                            <div class="card-header">
-                                <h2 class="card-title">Productos</h2>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless table-striped mb-0"
-                                           id="tbl-productos"
-                                           style="min-width: 380px;">
-                                        <thead>
-                                        <tr>
-                                            <th width="6%" class="ps-4">Cantidad</th>
-                                            <th width="65%">Descripción</th>
-                                            <th width="7%" class="text-end">Valor Unitario</th>
-                                            <th width="7%" class="text-end">Valor Total</th>
-                                            <th width="5%" class="text-end">Acción</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="ps-4">
-                                                <input type="text" class="form-control" value="1.00"
-                                                       style="text-align: right">
-                                            </td>
-                                            <td><a href="#">
-                                                <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido
-                                                    250Gb</strong></a></td>
-                                            <td class="text-end">
-                                                <input type="text" class="form-control" value="2699.00"
-                                                       style="text-align: right">
-                                            </td>
-                                            <td class="text-end">2699.00</td>
-                                            <td class="text-end">
-                                                <a href="#" class="btn btn-danger" title="Quitar producto"
-                                                   class="btn-quitar-producto">
-                                                    <i class="fa fa-solid fa-trash"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ps-4">
-                                                <input type="text" class="form-control" value="1.00"
-                                                       style="text-align: right">
-                                            </td>
-                                            <td><a href="#">
-                                                <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido
-                                                    250Gb</strong></a></td>
-                                            <td class="text-end">
-                                                <input type="text" class="form-control" value="2699.00"
-                                                       style="text-align: right">
-                                            </td>
-                                            <td class="text-end">2699.00</td>
-                                            <td class="text-end">
-                                                <a href="#" class="btn btn-danger" title="Quitar producto"
-                                                   class="btn-quitar-producto">
-                                                    <i class="fa fa-solid fa-trash"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="card card-modern">
+                                <div class="card-header">
+                                    <h2 class="card-title">Productos</h2>
                                 </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless table-striped mb-0"
+                                               id="tbl-productos"
+                                               style="min-width: 380px;">
+                                            <thead>
+                                            <tr>
+                                                <th width="6%" class="ps-4">Cantidad</th>
+                                                <th width="65%">Descripción</th>
+                                                <th width="7%" class="text-end">Valor Unitario</th>
+                                                <th width="7%" class="text-end">Valor Total</th>
+                                                <th width="5%" class="text-end">Acción</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <input type="text" class="form-control" value="1.00"
+                                                           style="text-align: right">
+                                                </td>
+                                                <td><a href="#">
+                                                    <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido
+                                                        250Gb</strong></a></td>
+                                                <td class="text-end">
+                                                    <input type="text" class="form-control" value="2699.00"
+                                                           style="text-align: right">
+                                                </td>
+                                                <td class="text-end">2699.00</td>
+                                                <td class="text-end">
+                                                    <a href="#" class="btn btn-danger" title="Quitar producto"
+                                                       class="btn-quitar-producto">
+                                                        <i class="fa fa-solid fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ps-4">
+                                                    <input type="text" class="form-control" value="1.00"
+                                                           style="text-align: right">
+                                                </td>
+                                                <td><a href="#">
+                                                    <strong>Latpop HP Pavilion Core I3 10k342, Ram 8Gb, Disco Solido
+                                                        250Gb</strong></a></td>
+                                                <td class="text-end">
+                                                    <input type="text" class="form-control" value="2699.00"
+                                                           style="text-align: right">
+                                                </td>
+                                                <td class="text-end">2699.00</td>
+                                                <td class="text-end">
+                                                    <a href="#" class="btn btn-danger" title="Quitar producto"
+                                                       class="btn-quitar-producto">
+                                                        <i class="fa fa-solid fa-trash"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                <div class="row justify-content-end flex-column flex-lg-row my-3">
-                                    <div class="col-auto me-5">
-                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
-                                        <span class="d-flex align-items-center">
-												2 Productos
-												<i class="fas fa-chevron-right text-color-primary px-3"></i>
-												<b class="text-color-dark text-xxs">5,398</b>
-											</span>
-                                    </div>
-                                    <div class="col-auto me-5">
-                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
-                                        <span class="d-flex align-items-center">
-												Igv 18%
-												<i class="fas fa-chevron-right text-color-primary px-3"></i>
-												<b class="text-color-dark text-xxs">971.64</b>
-											</span>
-                                    </div>
-                                    <div class="col-auto">
-                                        <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
-                                        <span class="d-flex align-items-center justify-content-lg-end">
-												<strong class="text-color-dark text-5">6,369.64</strong>
-											</span>
+                                    <div class="row justify-content-end flex-column flex-lg-row my-3">
+                                        <div class="col-auto me-5">
+                                            <h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
+                                            <span class="d-flex align-items-center">
+                                                    2 Productos
+                                                    <i class="fas fa-chevron-right text-color-primary px-3"></i>
+                                                    <b class="text-color-dark text-xxs">5,398</b>
+                                                </span>
+                                        </div>
+                                        <div class="col-auto me-5">
+                                            <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
+                                            <span class="d-flex align-items-center">
+                                                    Igv 18%
+                                                    <i class="fas fa-chevron-right text-color-primary px-3"></i>
+                                                    <b class="text-color-dark text-xxs">971.64</b>
+                                                </span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
+                                            <span class="d-flex align-items-center justify-content-lg-end">
+                                                    <strong class="text-color-dark text-5">6,369.64</strong>
+                                                </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
 
-                <div class="row action-buttons" style="border-top: 1px solid #333; padding: 25px 25px">
+                    <div class="row action-buttons" style="border-top: 1px solid #333; padding: 25px 25px">
                     <div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
                         <a href="#"
                            class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar</a>
@@ -643,7 +610,205 @@
                         </button>
                     </div>
                 </div>
-            </form>
+                </form>
+
+                <div class="col-5">
+                    <div class="row">
+
+                        <div class="card card-modern">
+                            <div class="card-header">
+                                <h2 class="card-title">Vista Previa</h2>
+                            </div>
+                            <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="invoice-inner clearfix pb-5">
+                                    <div class="invoice-info clearfix" id="invoice_wrapper">
+                                        <div class="invoice-headar">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="invoice-logo">
+                                                        <!-- logo started -->
+                                                        <div class="logo">
+                                                            <img src="img/logo-custom-black.png" alt="logo" width="90">
+                                                        </div>
+                                                        <!-- logo ended -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="invoice-id">
+                                                        <div class="info">
+                                                            <h1 class="inv-header-1">Invoice</h1>
+                                                            <p class="mb-1">Invoice Number: <span>#45613</span></p>
+                                                            <p class="mb-0">Invoice Date: <span>24 Jan 2022</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="invoice-top">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="invoice-number mb-30">
+                                                        <h4 class="inv-title-1">Invoice To</h4>
+                                                        <h2 class="name">Jhon Smith</h2>
+                                                        <p class="invo-addr-1">
+                                                            Theme Vessel <br/>
+                                                            info@themevessel.com <br/>
+                                                            21-12 Green Street, Meherpur, Bangladesh <br/>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="invoice-number mb-30">
+                                                        <div class="invoice-number-inner">
+                                                            <h4 class="inv-title-1">Invoice From</h4>
+                                                            <h2 class="name">Animas Roky</h2>
+                                                            <p class="invo-addr-1">
+                                                                Apexo Inc  <br/>
+                                                                billing@apexo.com <br/>
+                                                                169 Teroghoria, Bangladesh <br/>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="invoice-center">
+                                            <div class="table-responsive">
+                                                <table class="table mb-0 table-striped invoice-table">
+                                                    <thead class="bg-active">
+                                                    <tr class="tr">
+                                                        <th>No.</th>
+                                                        <th class="pl0 text-start">Item Description</th>
+                                                        <th class="text-center">Price</th>
+                                                        <th class="text-center">Quantity</th>
+                                                        <th class="text-end">Amount</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr class="tr">
+                                                        <td>
+                                                            <div class="item-desc-1">
+                                                                <span>01</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="pl0">Businesscard Design</td>
+                                                        <td class="text-center">$300</td>
+                                                        <td class="text-center">2</td>
+                                                        <td class="text-end">$600.00</td>
+                                                    </tr>
+                                                    <tr class="bg-grea">
+                                                        <td>
+                                                            <div class="item-desc-1">
+                                                                <span>02</span>
+
+                                                            </div>
+                                                        </td>
+                                                        <td class="pl0">Fruit Flayer Design</td>
+                                                        <td class="text-center">$400</td>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-end">$60.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="item-desc-1">
+                                                                <span>03</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="pl0">Application Interface Design</td>
+                                                        <td class="text-center">$240</td>
+                                                        <td class="text-center">3</td>
+                                                        <td class="text-end">$640.00</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="item-desc-1">
+                                                                <span>04</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="pl0">Theme Development</td>
+                                                        <td class="text-center">$720</td>
+                                                        <td class="text-center">4</td>
+                                                        <td class="text-end">$640.00</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="text-center">SubTotal</td>
+                                                        <td class="text-end">$710.99</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="text-center">Tax</td>
+                                                        <td class="text-end">$85.99</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="text-center f-w-600 active-color">Grand Total</td>
+                                                        <td class="f-w-600 text-end active-color">$795.99</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="invoice-bottom">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-5 col-sm-5">
+                                                    <div class="payment-method mb-30">
+                                                        <h3 class="inv-title-1">Payment Method</h3>
+                                                        <ul class="payment-method-list-1">
+                                                            <li><strong>Account No:</strong> 00 123 647 840</li>
+                                                            <li><strong>Account Name:</strong> Jhon Doe</li>
+                                                            <li><strong>Branch Name:</strong> xyz</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-7 col-sm-7">
+                                                    <div class="terms-conditions mb-30">
+                                                        <h3 class="inv-title-1">Terms & Conditions</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy has</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="invoice-contact clearfix">
+                                            <div class="row g-0">
+                                                <a href="tel:+55-4XX-634-7071" class="d-flex col"><i class="fa fa-phone"></i> +00 123 647 840</a>
+                                                <a href="tel:info@themevessel.com" class="d-flex col"><i class="fa fa-envelope"></i> info@themevessel.com</a>
+                                                <a href="tel:info@themevessel.com" class="mr-0 d-flex col"><i class="fa fa-map-marker"></i> 169 Teroghoria, Bangladesh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- end: page -->
         </section>
     </div>
