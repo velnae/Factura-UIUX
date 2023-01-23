@@ -46,7 +46,7 @@ btnAddTable.addEventListener('click', function() {
         var row = tbody.insertRow();
         var rowTxt = tbodyTxt.insertRow();
 
-        row.insertCell().innerHTML = "<input id='cantidad' type='number' class='form-control' value='1' style='text-align: right'>"
+        row.insertCell().innerHTML = "<input id='cantidad' type='number' class='form-control' value='1' style='text-align: center'>"
         rowTxt.insertCell().innerHTML = '1';
 
         row.insertCell().innerHTML = product.name;
@@ -64,7 +64,7 @@ btnAddTable.addEventListener('click', function() {
         $(rowTxt).effect("highlight", {color: 'yellow'}, 1000);
 
         // si cambia la cantidad
-        row.querySelector('#cantidad').addEventListener('change', function() {
+        row.querySelector('#cantidad').addEventListener('input', function() {
             var cantidad = row.querySelector('#cantidad').value;
             var precieTotal = product.priceUnit * cantidad;
 
