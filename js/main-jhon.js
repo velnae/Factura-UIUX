@@ -85,11 +85,27 @@ btnAddTable.addEventListener('click', function() {
         cell.style = 'text-align: center; vertical-align: middle;'
 
         // agregar evento al boton eliminar
-        cell.querySelector('button').addEventListener('click', function() {
-            row.remove();
-            rowTxt.remove();
-            // calculando el total y tambien el total
-            calcularTotal();
+        cell.querySelector('button').addEventListener('click', function () {
+
+            swal.fire({
+                icon: 'warning',
+                title: '¿Está seguro?',
+                text: '¿Está seguro que desea quitar el producto?',
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, estoy seguro',
+                cancelButtonText: 'No, cancelar'
+            }).then((result) => {
+                if (result.value) {
+                    row.remove();
+                    rowTxt.remove();
+                    // calculando el total y tambien el total
+                    calcularTotal();
+                }
+            });
+
         });
     });
 
