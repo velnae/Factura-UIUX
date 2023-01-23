@@ -81,30 +81,16 @@ btnAddTable.addEventListener('click', function() {
 
         // agregar boton eliminar
         var cell = row.insertCell();
-        cell.innerHTML = "<button class='btn btn-danger' title='Quitar producto'class='btn-quitar-producto'><i class='fa fa-solid fa-trash'></i></button>";
+        cell.innerHTML = "<button id='btnDeleteTable' class='btn btn-danger' title='Quitar producto'class='btn-quitar-producto'><i class='fa fa-solid fa-trash'></i></button>";
         cell.style = 'text-align: center; vertical-align: middle;'
 
-        // agregar evento al boton eliminar
-        cell.querySelector('button').addEventListener('click', function () {
+        // agregar evento al boton eliminar con el id btnDeleteTable
+        cell.querySelector('#btnDeleteTable').addEventListener('click', function() {
 
-            swal.fire({
-                icon: 'warning',
-                title: '¿Está seguro?',
-                text: '¿Está seguro que desea quitar el producto?',
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, estoy seguro',
-                cancelButtonText: 'No, cancelar'
-            }).then((result) => {
-                if (result.value) {
                     row.remove();
                     rowTxt.remove();
                     // calculando el total y tambien el total
                     calcularTotal();
-                }
-            });
 
         });
     });
