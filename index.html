@@ -487,22 +487,20 @@
                                     <div class="form-group row pb-3">
                                         <label class="col-lg-3 control-label text-lg-end pt-2">Buscador de producto</label>
                                         <div class="col-lg-6">
-                                            <select multiple data-plugin-selectTwo class="form-control populate">
-                                                <option value="CA">California</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="WA">Washington</option>
+                                            <select multiple data-plugin-selectTwo class="form-control populate" id="selectProducts">
+                                                <!--<option value="CA">California</option>
+                                                <option value="NV">Nevada</option>-->
                                             </select>
                                         </div>
                                         <div class="col-lg-2">
-                                            <button type="button" class="mb-1 me-1 btn btn-primary">Agregar</button>
+                                            <button type="button" class="mb-1 me-1 btn btn-primary" id="btnAddTable">Agregar</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="row">
                         <div class="col">
 
@@ -525,7 +523,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
+                                            <!--<tr>
                                                 <td class="ps-4">
                                                     <input type="text" class="form-control" value="1.00"
                                                            style="text-align: right">
@@ -564,7 +562,7 @@
                                                         <i class="fa fa-solid fa-trash"></i>
                                                     </a>
                                                 </td>
-                                            </tr>
+                                            </tr>-->
                                             </tbody>
                                         </table>
                                     </div>
@@ -573,23 +571,23 @@
                                         <div class="col-auto me-5">
                                             <h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
                                             <span class="d-flex align-items-center">
-                                                    2 Productos
+                                                    <span id="quatityProducts" style="margin-right: 5px;">0 </span> Productos
                                                     <i class="fas fa-chevron-right text-color-primary px-3"></i>
-                                                    <b class="text-color-dark text-xxs">5,398</b>
-                                                </span>
+                                                    <b class="text-color-dark text-xxs">S/ </b><b class="text-color-dark text-xxs" id="subTotal">0.00</b>
+                                            </span>
                                         </div>
                                         <div class="col-auto me-5">
                                             <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
                                             <span class="d-flex align-items-center">
                                                     Igv 18%
                                                     <i class="fas fa-chevron-right text-color-primary px-3"></i>
-                                                    <b class="text-color-dark text-xxs">971.64</b>
+                                                    <b class="text-color-dark text-xxs">S/ </b><b class="text-color-dark text-xxs" id="igv">0.00</b>
                                                 </span>
                                         </div>
                                         <div class="col-auto">
                                             <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
                                             <span class="d-flex align-items-center justify-content-lg-end">
-                                                    <strong class="text-color-dark text-5">6,369.64</strong>
+                                                <b class="text-color-dark text-xxs">S/ </b><strong class="text-color-dark text-5" id="precioTotal">0.00</strong>
                                                 </span>
                                         </div>
                                     </div>
@@ -598,6 +596,8 @@
 
                         </div>
                     </div>
+
+                    <script src="./js/main-jhon.js"></script>
 
                     <div class="row action-buttons" style="border-top: 1px solid #333; padding: 25px 25px">
                     <div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
