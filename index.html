@@ -447,7 +447,7 @@
                                     </div>
 
                                     <div class="row mt-2">
-                                        <div class="col-5">
+                                        <div class="col-6">
                                             <div class="form-group row pb-2">
                                                 <label class="col-4 control-label pt-2">Serie</label>
                                                 <div class="col-8">
@@ -460,7 +460,8 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-7">
+                                        <!-- Fecha -->
+                                        <!-- <div class="col-7">
                                             <div class="form-group row">
                                                 <label class="col-3 control-label pt-2">Fecha</label>
                                                 <div class="col-9">
@@ -472,7 +473,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -618,64 +619,33 @@
                     <div class="row">
 
                         <div class="card card-modern">
-                            <div class="card-header">
-                                <h2 class="card-title">Vista Previa</h2>
+                            <div class="card-header margin-bottom: 10em">
+                                <!-- <h2 class="card-title">Vista Previa</h2> -->
+                                <div class="col-sm-6">
+                                    <div class="invoice-logo">
+                                        <!-- logo started -->
+                                        <div class="logo">
+                                            <img src="img/Logo Rayon.png" alt="logo" width="90">
+                                        </div>
+                                        <!-- logo ended -->
+                                    </div>
+                                </div>
+                                <hr>
                             </div>
-                            <div class="card-body">
 
-
-
-
-
-
-
-
-
-
+                            <div class="card-body ">
 
                                 <div class="invoice-inner clearfix pb-5">
                                     <div class="invoice-info clearfix" id="invoice_wrapper">
-                                        <div class="invoice-headar">
+
+
+                                        <div class="invoice-headar margen">
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="invoice-logo">
-                                                        <!-- logo started -->
-                                                        <div class="logo">
-                                                            <img src="img/logo-custom-black.png" alt="logo" width="90">
-                                                        </div>
-                                                        <!-- logo ended -->
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="invoice-id">
+                                                    <div class="invoice-number mb-30">
                                                         <div class="info">
-                                                            <h1 class="inv-header-1">Factura</h1>
-                                                            <p class="mb-1">Número de factura: <span>#45613</span></p>
-                                                            <p class="mb-0">Fecha de factura: <span>24 Jan 2022</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="invoice-top">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="invoice-number mb-30">
-                                                        <h4 class="inv-title-1">Facturar a:</h4>
-                                                        <h2 class="name">Jhon Smith</h2>
-                                                        <p class="invo-addr-1">
-                                                            <p id="idNombre">Theme Vessel</p> 
-                                                            <p id="correo">info@gmail.com</p>
-                                                            <p id="idDireccion">av. Brasil</p>
-                                                            <p id="telefono"></p>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="invoice-number mb-30">
-                                                        <div class="invoice-number-inner">
-                                                            <h4 class="inv-title-1">Factura de:</h4>
-                                                            <h2 class="name">RAYONES</h2>
+                                                            <!-- <h4 class="inv-title-1">Factura de:</h4> -->
+                                                            <h1  class="inv-header-1" class="name">RAYONES</h1>
                                                             <p class="invo-addr-1">
                                                                 Apexo Inc  <br/>
                                                                 billing@apexo.com <br/>
@@ -684,9 +654,128 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-sm-6">
+                                                    <div class="invoice-number mb-30">
+                                                        <div class="info">
+                                                            <h1 class="inv-header-1" id="idFactura">Factura</h1>
+                                                            <p class="mb-1"><span id="idFacturaDes">Número de factura: </span><span>#45613</span></p>
+                                                            <p class="mb-0"><span id="idFechaFac">Fecha de factura: </span><span>24 Jan 2022</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="invoice-center">
+                                        <div class="invoice-top">
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <div class="invoice-number mb-30">
+                                                        <h1  class="inv-header-1" >Detalles  del <strong>  Cliente</strong> </h1>
+                                                        <ul class="list-unstyled">
+                                                            <li><strong>Nombre y Apellido:   </strong>  John Valverde Ramoz</li>
+                                                            <li><strong>DNI/RUC:   </strong>  75614893</li>
+                                                            <li><strong>Derección:  </strong>  Urb. San Luis Baja</li>
+                                                            <li><strong>Gmail:  </strong>   ejemplogmail.com</li>
+                                                            <li><strong>Telefono:  </strong>   987654321</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-sm-6">
+                                                    <div class="invoice-number mb-30">
+                                                        <h4 class="inv-title-1">Facturar a:</h4>
+                                                        <h2 class="name">Jhon Smith</h2>
+                                                        <p class="invo-addr-1">
+                                                            Theme Vessel  <br/>
+                                                            info@gmail.com <br/>
+                                                            av. Brasil <br/>
+
+                                                        </p>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Albert -->
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <div class="card card-modern">
+                                                    <div class="card-header">
+                                                        <h2 class="card-title">Productos</h2>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless table-striped mb-0"
+                                                                   id="tbl-productos"
+                                                                   style="min-width: 380px;">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th width="6%" class="ps-4">Cantidad</th>
+                                                                    <th width="65%">Descripción</th>
+                                                                    <th width="7%" class="text-end">Valor Unitario</th>
+                                                                    <th width="7%" class="text-end">Valor Total</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="ps-4">02</td>
+                                                                    <td class="pl0">Businesscard Design</td>
+                                                                    <td class="text-end">$300</td>
+                                                                    <td class="text-end">$600</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="ps-4">01</td>
+                                                                    <td class="pl0">Fruit Flayer Design</td>
+                                                                    <td class="text-end">$400</td>
+                                                                    <td class="text-end">$400</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="ps-4">03</td>
+                                                                    <td class="pl0">Application Interface Design</td>
+                                                                    <td class="text-end">$240</td>
+                                                                    <td class="text-end">$720</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="ps-4">04</td>
+                                                                    <td class="pl0">Theme Development</td>
+                                                                    <td class="text-end">$100</td>
+                                                                    <td class="text-end">$400</td>
+                                                                </tr>
+                                                                </tbody>
+
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="row justify-content-end flex-column flex-lg-row my-3">
+                                                            <div class="col-auto me-2">
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
+                                                                <span class="d-flex align-items-center">
+                                                                        4 Productos
+                                                                        <i class="fas fa-chevron-right text-color-primary px-3"></i>
+                                                                        <b class="text-color-dark text-xxs">5,398</b>
+                                                                    </span>
+                                                            </div>
+                                                            <div class="col-auto me-2">
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
+                                                                <span class="d-flex align-items-center">
+                                                                        Igv 18%
+                                                                        <i class="fas fa-chevron-right text-color-primary px-3"></i>
+                                                                        <b class="text-color-dark text-xxs">971.64</b>
+                                                                    </span>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
+                                                                <span class="d-flex align-items-center justify-content-lg-end">
+                                                                        <strong class="text-color-dark text-5">6,369.64</strong>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- luis  -->
+                                        <!-- <div class="invoice-center">
                                             <div class="table-responsive">
                                                 <table class="table mb-0 table-striped invoice-table">
                                                     <thead class="bg-active">
@@ -769,7 +858,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="invoice-bottom">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-5 col-sm-5">
@@ -799,10 +888,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
 
 
 
@@ -913,7 +998,7 @@
                             <div class="form-group col-md-11 ">
                                 <label for="inputDireccion" class="formulario__label">Dirección</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" id="idDireccion" onkeyup="Mostrar_Direccion(this.value)" 
+                                    <input type="text" class="formulario__input" id="idDireccion" onkeyup="Mostrar_Direccion(this.value)"
                                        placeholder="Urb. San Luis Baja">
                                 </div>
                             </div>
@@ -943,7 +1028,7 @@
                             </div>
                             <script>
 
-                                const formulario = document.getElementById('formulario'); 
+                                const formulario = document.getElementById('formulario');
                                 const inputs = document.querySelectorAll('#formulario input');
                                 const expresiones = {
                                 correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -988,7 +1073,7 @@
                                 input.addEventListener('keyup', validarFormulario);
                                 input.addEventListener('blur', validarFormulario);
                             });
-                            
+
                             formulario.addEventListener('submit', (e) => {
 
                                 e.preventDefault();
@@ -1000,7 +1085,7 @@
                                     setTimeout(() => {
                                         document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
                                     }, 5000);
-        
+
                                     document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
                                         icono.classList.remove('formulario__grupo-correcto');
                                     });
@@ -1065,6 +1150,25 @@
                 $lblDocumentoTipo.text('RUC : ');
             } else {
                 $lblDocumentoTipo.text('RUC / DNI : ');
+            }
+        });
+
+        //luis
+        $('input[name="rdo-documento"]').on('click', function () {
+            let rdo_doc1 = $(this).attr('id');
+            let $lblIdFactura = $('#idFactura');
+            let $lblIdFacturaDes = $('#idFacturaDes');
+            let $lblIdFechaFac = $('#idFechaFac');
+
+            if (rdo_doc1 === 'rdo-factura') {
+                $lblIdFactura.text('Factura ');
+                $lblIdFacturaDes.text('Número de factura: ');
+                $lblIdFechaFac.text('Fecha de factura: ');
+
+            } else {
+                $lblIdFactura.text('Boleta ');
+                $lblIdFacturaDes.text('Número de boleta: ')
+                $lblIdFechaFac.text('Fecha de boleta: ');
             }
         });
 
