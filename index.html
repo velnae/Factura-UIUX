@@ -1177,6 +1177,10 @@
             let $clienteDescripcion = $('#cliente-descripcion');
             let $clienteDocumento = $('#inp-buscar-cliente');
 
+            let $cliNombreModal= $('#inputCliente4');
+            let $cliRuc_dniModal= $('#inputdni4');
+            let $cliDireccionModal= $('#idDireccion');
+
             let cliente_dni = {
                 'documento': '71632611',
                 'descripcion': 'ZEILU MASSIEL MOREANO FALCON',
@@ -1206,6 +1210,10 @@
             }
 
             $clienteDescripcion.val(cliente.descripcion);
+            
+            $cliNombreModal.val(cliente.descripcion);
+            $cliRuc_dniModal.val(cliente.documento);
+            $cliDireccionModal.val(cliente.direccion);
         });
 
         $('#tbl-productos').on('click', '.btn-quitar-producto', function (e) {
