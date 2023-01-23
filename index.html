@@ -388,92 +388,76 @@
 
             <div class="row">
 
-                <form class="order-details action-buttons-fixed col-7" method="post">
+                <form class="order-details action-buttons-fixed col-xl-7 col-md-12" method="post">
                     <div class="row">
-                        <div class="col-lg-12 col-xl-6 mb-7 mb-2">
+                        <div class="col-md-12 col-lg-8 col-xl-8 mb-7 mb-2">
                             <div class="card card-modern">
                                 <div class="card-header">
                                     <h2 class="card-title">Datos del cliente</h2>
                                 </div>
                                 <div class="card-body">
-                                    <div class="form-row">
-                                        <div class="form-group row pb-2">
-                                            <label class="col-lg-4 col-xl-2 control-label pt-2" for="inp-buscar-cliente"><span
-                                                    id="lbl-documento-tipo">RUC :</span> <span
-                                                    class="required">*</span></label>
-                                            <div class="col-lg-4 col-xl-8">
+                                    <div class="">
+                                        <div class="row pb-2">
+                                            <div class="col-xl-2 col-lg-4 col-md-4">
+                                                <label class=" pt-2" for="inp-buscar-cliente"><span
+                                                        id="lbl-documento-tipo">RUC :</span> <span
+                                                        class="required">*</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8">
                                                 <input type="text" class="form-control" id="inp-buscar-cliente"
                                                        maxlength="11" required>
                                             </div>
-                                            <button type="button" class="col-2 btn btn-primary" id="btn-buscar-cliente">
-                                                Buscar
-                                            </button>
+                                            <div class="col-xl-2 col-lg-6 col-md-6">
+                                                <button type="button" class="btn btn-primary" id="btn-buscar-cliente">
+                                                    Buscar
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-row">
                                         <div class="form-group row pb-2">
-                                            <label class="col-2 control-label pt-2" for="cliente-descripcion">Cliente</label>
-                                            <div class="col-8">
-                                                <input type="text" class="form-control" id="cliente-descripcion" disabled
-                                                       style="text-transform: uppercase;" onkeypress="Mostrar_Nombre(this.value)">
+
+                                            <div class="col-xl-2 col-lg-4 col-md-4">
+                                                <label class="control-label pt-2"
+                                                       for="cliente-descripcion">Cliente</label>
                                             </div>
-                                            <button type="button" class="col-2 btn btn-primary" data-bs-toggle="modal"
-                                                    href="#exampleModal" id="btn-editar-cliente">Editar
-                                            </button>
+                                            <div class="col-xl-8 col-lg-8 col-md-8">
+                                                <input type="text" class="form-control" id="cliente-descripcion"
+                                                       disabled
+                                                       style="text-transform: uppercase;"
+                                                       onkeypress="Mostrar_Nombre(this.value)">
+                                            </div>
+                                            <div class="col-xl-2 col-lg-6 col-md-6">
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        href="#exampleModal" id="btn-editar-cliente">Editar
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-12 col-xl-6">
-
+                        <div class="col-md-12 col-lg-4 col-xl-4">
                             <div class="card card-modern">
                                 <div class="card-header">
                                     <h2 class="card-title">Datos del documento</h2>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <div class="" role="group"
+                                             aria-label="Basic radio toggle button group">
                                             <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
                                                    autocomplete="off" checked>
-                                            <label class="btn btn-outline-primary" for="rdo-factura">Factura</label>
-
+                                            <label class="btn btn-outline-primary d-block"
+                                                   for="rdo-factura">Factura</label>
                                             <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
                                                    autocomplete="off">
-                                            <label class="btn btn-outline-primary" for="rdo-boleta">Boleta</label>
+                                            <label class="btn btn-outline-primary d-block"
+                                                   for="rdo-boleta">Boleta</label>
                                         </div>
-                                    </div>
-
-                                    <div class="row mt-2">
-                                        <div class="col-6">
-                                            <div class="form-group row pb-2">
-                                                <label class="col-4 control-label pt-2">Serie</label>
-                                                <div class="col-8">
-                                                    <select class="form-control">
-                                                        <option>F001</option>
-                                                        <option>F002</option>
-                                                        <option>F003</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- Fecha -->
-                                        <!-- <div class="col-7">
-                                            <div class="form-group row">
-                                                <label class="col-3 control-label pt-2">Fecha</label>
-                                                <div class="col-9">
-                                                    <div class="input-group">
-                                                        <span class="input-group-text">
-                                                            <i class="fas fa-calendar-alt"></i>
-                                                        </span>
-                                                        <input type="date" class="form-control" value="2023-01-20" disabled>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -485,22 +469,26 @@
                             <div class="card card-modern">
                                 <div class="card-body">
                                     <div class="form-group row pb-3">
-                                        <label class="col-lg-3 control-label text-lg-end pt-2">Buscador de producto</label>
+                                        <label class="col-lg-3 control-label text-lg-end pt-2">Buscador de
+                                            producto</label>
                                         <div class="col-lg-6">
-                                            <select multiple data-plugin-selectTwo class="form-control populate" id="selectProducts">
+                                            <select multiple data-plugin-selectTwo class="form-control populate"
+                                                    id="selectProducts">
                                                 <!--<option value="CA">California</option>
                                                 <option value="NV">Nevada</option>-->
                                             </select>
                                         </div>
                                         <div class="col-lg-2">
-                                            <button type="button" class="mb-1 me-1 btn btn-primary" id="btnAddTable">Agregar</button>
+                                            <button type="button" class="mb-1 me-1 btn btn-primary" id="btnAddTable">
+                                                Agregar
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col">
 
@@ -517,8 +505,8 @@
                                             <tr>
                                                 <th width="6%" class="ps-4">Cantidad</th>
                                                 <th width="65%">Descripción</th>
-                                                <th width="7%" class="text-end">Valor Unitario</th>
-                                                <th width="7%" class="text-end">Valor Total</th>
+                                                <th width="7%" class="text-end">Precio Unitario</th>
+                                                <th width="7%" class="text-end">Precio Total</th>
                                                 <th width="5%" class="text-end">Acción</th>
                                             </tr>
                                             </thead>
@@ -573,7 +561,8 @@
                                             <span class="d-flex align-items-center">
                                                     <span id="quatityProducts" style="margin-right: 5px;">0 </span> Productos
                                                     <i class="fas fa-chevron-right text-color-primary px-3"></i>
-                                                    <b class="text-color-dark text-xxs">S/ </b><b class="text-color-dark text-xxs" id="subTotal">0.00</b>
+                                                    <b class="text-color-dark text-xxs">S/ </b><b
+                                                    class="text-color-dark text-xxs" id="subTotal">0.00</b>
                                             </span>
                                         </div>
                                         <div class="col-auto me-5">
@@ -581,13 +570,15 @@
                                             <span class="d-flex align-items-center">
                                                     Igv 18%
                                                     <i class="fas fa-chevron-right text-color-primary px-3"></i>
-                                                    <b class="text-color-dark text-xxs">S/ </b><b class="text-color-dark text-xxs" id="igv">0.00</b>
+                                                    <b class="text-color-dark text-xxs">S/ </b><b
+                                                    class="text-color-dark text-xxs" id="igv">0.00</b>
                                                 </span>
                                         </div>
                                         <div class="col-auto">
                                             <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
                                             <span class="d-flex align-items-center justify-content-lg-end">
-                                                <b class="text-color-dark text-xxs">S/ </b><strong class="text-color-dark text-5" id="precioTotal">0.00</strong>
+                                                <b class="text-color-dark text-xxs">S/ </b><strong
+                                                    class="text-color-dark text-5" id="precioTotal">0.00</strong>
                                                 </span>
                                         </div>
                                     </div>
@@ -600,67 +591,68 @@
                     <script src="./js/main-jhon.js"></script>
 
                     <div class="row action-buttons" style="border-top: 1px solid #333; padding: 25px 25px">
-                    <div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
-                        <a href="#"
-                           class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar</a>
-                    </div>
-                    <div class="col-12 col-md-auto ms-md-auto mt-3 mt-md-0 ms-auto">
+                        <div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
+                            <a href="#"
+                               class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar</a>
+                        </div>
+                        <div class="col-12 col-md-auto ms-md-auto mt-3 mt-md-0 ms-auto">
 
-                        <button type="submit"
-                                class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1"
-                                data-loading-text="Loading...">
-                            <i class="bx bx-save text-4 me-2"></i> Guardar
-                        </button>
+                            <button type="submit"
+                                    class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1"
+                                    data-loading-text="Loading...">
+                                <i class="bx bx-save text-4 me-2"></i> Guardar
+                            </button>
+                        </div>
                     </div>
-                </div>
                 </form>
 
-                <div class="col-5">
-                    <div class="row">
-
+                <div class="col-xl-5 col-md-12" style="border-left: 1px dashed #333">
+                    <div class="row" style="
+    background-color: #666;
+    padding: 15px 10px 90px 10px;
+">
                         <div class="card card-modern">
-                            <div class="card-header margin-bottom: 10em">
-                                <!-- <h2 class="card-title">Vista Previa</h2> -->
-                                <div class="col-sm-6">
-                                    <div class="invoice-logo">
-                                        <!-- logo started -->
-                                        <div class="logo">
-                                            <img src="img/Logo Rayon.png" alt="logo" width="90">
-                                        </div>
-                                        <!-- logo ended -->
-                                    </div>
-                                </div>
+                            <div class="card-header mb-0 pb-0">
+                                <h2 class="card-title">Vista Previa</h2>
                                 <hr>
                             </div>
 
                             <div class="card-body ">
-
                                 <div class="invoice-inner clearfix pb-5">
                                     <div class="invoice-info clearfix" id="invoice_wrapper">
-
 
                                         <div class="invoice-headar margen">
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="invoice-number mb-30">
+                                                    <div class="invoice-logo">
+                                                        <!-- logo started -->
+                                                        <div class="logo">
+                                                            <img src="img/Logo Rayon.png" alt="logo" width="140">
+                                                        </div>
+                                                        <!-- logo ended -->
+                                                    </div>
+                                                    <div class="invoice-number mb-2">
                                                         <div class="info">
-                                                            <!-- <h4 class="inv-title-1">Factura de:</h4> -->
-                                                            <h1  class="inv-header-1" class="name">RAYONES</h1>
                                                             <p class="invo-addr-1">
-                                                                Apexo Inc  <br/>
-                                                                +51 987 654 321 <br/>
-                                                                rayon@gmail.com <br/>
-                                                                169 Teroghoria, Bangladesh <br/>
+                                                                Grupo Rayones S.A.C. <br/>
+                                                                Abancay - Apurímac - Perú<br/>
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="invoice-number mb-30">
+                                                    <div class="invoice-number mb-2">
                                                         <div class="info">
-                                                            <h1 class="inv-header-1" id="idFactura">Factura</h1>
-                                                            <p class="mb-1"><span id="idFacturaDes">Número de factura: </span><span>#45613</span></p>
-                                                            <p class="mb-0"><span id="idFechaFac">Fecha de factura: </span><span>24 Jan 2022</span></p>
+                                                            <h3 class="inv-header-1" id="idFactura" style="font-weight: bold">Factura</h3>
+
+                                                            <p class="mb-1"><span
+                                                                    id="idEmpresa">RC: </span><span>20123456789</span>
+                                                            <p class="mb-1"><span
+                                                                    id="idFacturaDes">Número de factura: </span><span id="idSpanSerieCorrelativo">F001 - 45613</span>
+                                                            </p>
+                                                            <p class="mb-0"><span
+                                                                    id="idFechaFac">Fecha de factura: </span><span>24 Enero 2022</span>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -670,28 +662,17 @@
                                             <div class="row">
                                                 <div class="col-md-10">
                                                     <div class="invoice-number mb-30">
-                                                        <h1  class="inv-header-1" >Detalles  del <strong>  Cliente</strong> </h1>
-                                                        <ul class="list-unstyled">
-                                                            <li><strong>Nombre y Apellido:   </strong>  John Valverde Ramoz</li>
-                                                            <li><strong>DNI/RUC:   </strong>  75614893</li>
-                                                            <li><strong>Derección:  </strong>  Urb. San Luis Baja</li>
-                                                            <li><strong>Gmail:  </strong>   ejemplogmail.com</li>
-                                                            <li><strong>Telefono:  </strong>   987654321</li>
+                                                        <h3 class="inv-header-1"><strong> Detalles del Cliente</strong>
+                                                        </h3>
+                                                        <ul class="list-unstyled row">
+                                                            <li class="col-6"><strong id="lblNumDocClient">DNI / RUC : </strong><span id="txtNumDocClient"></span></li>
+                                                            <li class="col-12"><strong id="lblDescriptionClient">Razón Social : </strong><span id="txtDescriptionClient"></span></li>
+                                                            <li class="col-6"><strong id="lblDirectionClient">Dirección : </strong> <span id="txtDirectionClient"></span></li>
+                                                            <li class="col-6"><strong>Email: </strong> <span id="txtEmailClient"></span></li>
+                                                            <li class="col-6"><strong>Telefono: </strong> <span id="txtPhoneClient"></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <!-- <div class="col-sm-6">
-                                                    <div class="invoice-number mb-30">
-                                                        <h4 class="inv-title-1">Facturar a:</h4>
-                                                        <h2 class="name">Jhon Smith</h2>
-                                                        <p class="invo-addr-1">
-                                                            Theme Vessel  <br/>
-                                                            info@gmail.com <br/>
-                                                            av. Brasil <br/>
-
-                                                        </p>
-                                                    </div>
-                                                </div> -->
                                             </div>
                                         </div>
 
@@ -700,20 +681,17 @@
                                             <div class="col">
 
                                                 <div class="card card-modern">
-                                                    <div class="card-header">
-                                                        <h2 class="card-title">Productos</h2>
-                                                    </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless table-striped mb-0"
-                                                                   id="tbl-productos"
+                                                                   id="tbl-productos-txt"
                                                                    style="min-width: 380px;">
                                                                 <thead>
                                                                 <tr>
                                                                     <th width="6%" class="ps-4">Cantidad</th>
                                                                     <th width="65%">Descripción</th>
-                                                                    <th width="7%" class="text-end">Valor Unitario</th>
-                                                                    <th width="7%" class="text-end">Valor Total</th>
+                                                                    <th width="7%" class="text-end">Precio Unitario</th>
+                                                                    <th width="7%" class="text-end">Precio Total</th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -723,24 +701,6 @@
                                                                     <td class="text-end">$300</td>
                                                                     <td class="text-end">$600</td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td class="ps-4">01</td>
-                                                                    <td class="pl0">Fruit Flayer Design</td>
-                                                                    <td class="text-end">$400</td>
-                                                                    <td class="text-end">$400</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="ps-4">03</td>
-                                                                    <td class="pl0">Application Interface Design</td>
-                                                                    <td class="text-end">$240</td>
-                                                                    <td class="text-end">$720</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="ps-4">04</td>
-                                                                    <td class="pl0">Theme Development</td>
-                                                                    <td class="text-end">$100</td>
-                                                                    <td class="text-end">$400</td>
-                                                                </tr>
                                                                 </tbody>
 
                                                             </table>
@@ -748,7 +708,8 @@
 
                                                         <div class="row justify-content-end flex-column flex-lg-row my-3">
                                                             <div class="col-auto me-2">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Subtotal</h3>
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                    Subtotal</h3>
                                                                 <span class="d-flex align-items-center">
                                                                         4 Productos
                                                                         <i class="fas fa-chevron-right text-color-primary px-3"></i>
@@ -756,7 +717,8 @@
                                                                     </span>
                                                             </div>
                                                             <div class="col-auto me-2">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Impuesto</h3>
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                    Impuesto</h3>
                                                                 <span class="d-flex align-items-center">
                                                                         Igv 18%
                                                                         <i class="fas fa-chevron-right text-color-primary px-3"></i>
@@ -764,7 +726,8 @@
                                                                     </span>
                                                             </div>
                                                             <div class="col-auto">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                    Total</h3>
                                                                 <span class="d-flex align-items-center justify-content-lg-end">
                                                                         <strong class="text-color-dark text-5">6,369.64</strong>
                                                                     </span>
@@ -775,91 +738,7 @@
 
                                             </div>
                                         </div>
-                                        <!-- luis  -->
-                                        <!-- <div class="invoice-center">
-                                            <div class="table-responsive">
-                                                <table class="table mb-0 table-striped invoice-table">
-                                                    <thead class="bg-active">
-                                                    <tr class="tr">
-                                                        <th>N°.</th>
-                                                        <th class="pl0 text-start">Producto</th>
-                                                        <th class="text-center">Precio</th>
-                                                        <th class="text-center">Cantidad</th>
-                                                        <th class="text-end">Importe</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr class="tr">
-                                                        <td>
-                                                            <div class="item-desc-1">
-                                                                <span>01</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pl0">Businesscard Design</td>
-                                                        <td class="text-center">$300</td>
-                                                        <td class="text-center">2</td>
-                                                        <td class="text-end">$600.00</td>
-                                                    </tr>
-                                                    <tr class="bg-grea">
-                                                        <td>
-                                                            <div class="item-desc-1">
-                                                                <span>02</span>
 
-                                                            </div>
-                                                        </td>
-                                                        <td class="pl0">Fruit Flayer Design</td>
-                                                        <td class="text-center">$400</td>
-                                                        <td class="text-center">1</td>
-                                                        <td class="text-end">$60.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="item-desc-1">
-                                                                <span>03</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pl0">Application Interface Design</td>
-                                                        <td class="text-center">$240</td>
-                                                        <td class="text-center">3</td>
-                                                        <td class="text-end">$640.00</td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="item-desc-1">
-                                                                <span>04</span>
-                                                            </div>
-                                                        </td>
-                                                        <td class="pl0">Theme Development</td>
-                                                        <td class="text-center">$720</td>
-                                                        <td class="text-center">4</td>
-                                                        <td class="text-end">$640.00</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td class="text-center">SubTotal</td>
-                                                        <td class="text-end">$710.99</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td class="text-center">Igv</td>
-                                                        <td class="text-end">$85.99</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td class="text-center f-w-600 active-color">Total general</td>
-                                                        <td class="f-w-600 text-end active-color">$795.99</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div> -->
                                         <div class="invoice-bottom">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-5 col-sm-5">
@@ -875,27 +754,31 @@
                                                 <div class="col-lg-6 col-md-7 col-sm-7">
                                                     <div class="terms-conditions mb-30">
                                                         <h3 class="inv-title-1">Términos y condiciones</h3>
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy has</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy has</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="invoice-contact clearfix">
                                             <div class="row g-0">
-                                                <a href="tel:+55-4XX-634-7071" class="d-flex col me-0"><i class="fa fa-phone"></i> +51 987 654 321</a>
-                                                <a href="tel:info@themevessel.com" class="d-flex col me-2"><i class="fa fa-envelope"></i> rayon@gmail.com</a>
-                                                <a href="tel:info@themevessel.com" class="mr-0 d-flex col me-2 "><i class="fa fa-map-marker"></i> 169 Teroghoria, Bangladesh</a>
+                                                <a href="tel:+55-4XX-634-7071" class="d-flex col me-0"><i
+                                                        class="fa fa-phone"></i> +51 987 654 321</a>
+                                                <a href="tel:info@themevessel.com" class="d-flex col me-2"><i
+                                                        class="fa fa-envelope"></i> rayon@gmail.com</a>
+                                                <a href="tel:info@themevessel.com" class="mr-0 d-flex col me-2 "><i
+                                                        class="fa fa-map-marker"></i> 169 Teroghoria, Bangladesh</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-
-
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- end: page -->
@@ -986,44 +869,55 @@
                             <div class="form-group col-md-11">
                                 <label for="inputCliente" class="formulario__label ">Cliente</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="cliente" class="formulario__input Fields" id="inputCliente4" placeholder="Cliente"
-                                       readonly>
+                                    <input type="cliente" class="formulario__input Fields" id="inputCliente4"
+                                           placeholder="Cliente"
+                                           readonly>
                                 </div>
                             </div>
                             <div class="form-group col-md-11 mb-3 mb-lg-0">
                                 <label for="inputDNI" class="formulario__label">DNI / RUC</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="dni" class="formulario__input Fields" id="inputdni4" placeholder="DNI / RUC" readonly>
+                                    <input type="dni" class="formulario__input Fields" id="inputdni4"
+                                           placeholder="DNI / RUC" readonly>
                                 </div>
                             </div>
                             <div class="form-group col-md-11 ">
                                 <label for="inputDireccion" class="formulario__label">Dirección</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" id="idDireccion" onkeyup="Mostrar_Direccion(this.value)"
-                                       placeholder="Urb. San Luis Baja">
+                                    <input type="text" class="formulario__input" id="idDireccion"
+                                           onkeyup="Mostrar_Direccion(this.value)"
+                                           placeholder="Urb. San Luis Baja">
                                 </div>
                             </div>
                             <div class="form-group col-md-11" id="grupo__correo">
                                 <label for="correo" class="formulario__label">Email</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="empresa@gmail.com" onkeyup="Mostrar_Gmail(this.value)">
+                                    <input type="email" class="formulario__input" name="correo" id="correo"
+                                           placeholder="empresa@gmail.com" onkeyup="Mostrar_Gmail(this.value)">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                 </div>
-                                <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+                                <p class="formulario__input-error">El correo solo puede contener letras, números,
+                                    puntos, guiones y guion bajo.</p>
                             </div>
                             <div class="form-group col-md-11" id="grupo__telefono">
                                 <label for="telefono" class="formulario__label">Celular</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="987654321" onkeyup="Mostrar_Telefono(this.value)">
+                                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                                           placeholder="987654321" onkeyup="Mostrar_Telefono(this.value)">
                                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                 </div>
-                                <p class="formulario__input-error">El telefono solo puede contener números y el máximo son 9 dígitos.</p>
+                                <p class="formulario__input-error">El telefono solo puede contener números y el máximo
+                                    son 9 dígitos.</p>
                             </div>
                             <div class="modal-footer">
                                 <div class="row">
                                     <div class="col-md-12 text-end">
-                                        <button class="btn btn-primary modal-confirm" data-bs-dismiss="modal" type="reset">Guardar</button>
-                                        <button class="btn btn-default modal-dismiss" data-bs-dismiss="modal" type="reset">Cancelar</button>
+                                        <button class="btn btn-primary modal-confirm" data-bs-dismiss="modal"
+                                                type="reset">Guardar
+                                        </button>
+                                        <button class="btn btn-default modal-dismiss" data-bs-dismiss="modal"
+                                                type="reset">Cancelar
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1032,68 +926,68 @@
                                 const formulario = document.getElementById('formulario');
                                 const inputs = document.querySelectorAll('#formulario input');
                                 const expresiones = {
-                                correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-                                telefono: /^\d{7,9}$/ // 7 a 9 numeros.
-                            }
-
-                            const campos = {
-                                correo: false,
-                                telefono: false
-                            }
-
-                            const validarFormulario = (e) => {
-                                switch (e.target.name) {
-                                    case "correo":
-                                        validarCampo(expresiones.correo, e.target, 'correo');
-                                    break;
-                                    case "telefono":
-                                        validarCampo(expresiones.telefono, e.target, 'telefono');
-                                    break;
+                                    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                                    telefono: /^\d{7,9}$/ // 7 a 9 numeros.
                                 }
-                            }
 
-                            const validarCampo = (expresion, input, campo) => {
-                                if(expresion.test(input.value)){
-                                    document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
-                                    document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
-                                    document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
-                                    document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
-                                    document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
-                                    campos[campo] = true;
-                                } else {
-                                    document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
-                                    document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
-                                    document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
-                                    document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
-                                    document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
-                                    campos[campo] = false;
+                                const campos = {
+                                    correo: false,
+                                    telefono: false
                                 }
-                            }
 
-                            inputs.forEach((input) => {
-                                input.addEventListener('keyup', validarFormulario);
-                                input.addEventListener('blur', validarFormulario);
-                            });
-
-                            formulario.addEventListener('submit', (e) => {
-
-                                e.preventDefault();
-
-                                const terminos = document.getElementById('terminos');
-                                if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
-                                    formulario.reset();
-                                    document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-                                    setTimeout(() => {
-                                        document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-                                    }, 5000);
-
-                                    document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-                                        icono.classList.remove('formulario__grupo-correcto');
-                                    });
-                                } else {
-                                    document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+                                const validarFormulario = (e) => {
+                                    switch (e.target.name) {
+                                        case "correo":
+                                            validarCampo(expresiones.correo, e.target, 'correo');
+                                            break;
+                                        case "telefono":
+                                            validarCampo(expresiones.telefono, e.target, 'telefono');
+                                            break;
+                                    }
                                 }
-                            });
+
+                                const validarCampo = (expresion, input, campo) => {
+                                    if (expresion.test(input.value)) {
+                                        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
+                                        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
+                                        document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
+                                        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
+                                        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+                                        campos[campo] = true;
+                                    } else {
+                                        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
+                                        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
+                                        document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
+                                        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
+                                        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+                                        campos[campo] = false;
+                                    }
+                                }
+
+                                inputs.forEach((input) => {
+                                    input.addEventListener('keyup', validarFormulario);
+                                    input.addEventListener('blur', validarFormulario);
+                                });
+
+                                formulario.addEventListener('submit', (e) => {
+
+                                    e.preventDefault();
+
+                                    const terminos = document.getElementById('terminos');
+                                    if (campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked) {
+                                        formulario.reset();
+                                        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+                                        setTimeout(() => {
+                                            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+                                        }, 5000);
+
+                                        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+                                            icono.classList.remove('formulario__grupo-correcto');
+                                        });
+                                    } else {
+                                        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+                                    }
+                                });
 
                             </script>
                         </div>
@@ -1116,6 +1010,7 @@
 
 <!-- Vendor -->
 <script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.js"></script>
 <script src="vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
 <script src="vendor/popper/umd/popper.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1147,29 +1042,32 @@
             let rdo_doc = $(this).attr('id');
             let $lblDocumentoTipo = $('#lbl-documento-tipo');
 
-            if (rdo_doc === 'rdo-factura') {
-                $lblDocumentoTipo.text('RUC : ');
-            } else {
-                $lblDocumentoTipo.text('RUC / DNI : ');
-            }
-        });
-
-        //luis
-        $('input[name="rdo-documento"]').on('click', function () {
-            let rdo_doc1 = $(this).attr('id');
             let $lblIdFactura = $('#idFactura');
             let $lblIdFacturaDes = $('#idFacturaDes');
             let $lblIdFechaFac = $('#idFechaFac');
+            let $idSpanSerieCorrelativo = $('#idSpanSerieCorrelativo');
+            let $lblNumDocClient = $('#lblNumDocClient');
+            let $lblDescriptionClient = $('#lblDescriptionClient');
 
-            if (rdo_doc1 === 'rdo-factura') {
-                $lblIdFactura.text('Factura ');
-                $lblIdFacturaDes.text('Número de factura: ');
-                $lblIdFechaFac.text('Fecha de factura: ');
+            if (rdo_doc === 'rdo-factura') {
+                $lblDocumentoTipo.text('RUC : ');
+                $lblDescriptionClient.text('Razón Social : ').effect("highlight", {color: 'yellow'}, 1000);
+                $lblNumDocClient.text('RUC : ').effect("highlight", {color: 'yellow'}, 1000);
+                $lblIdFactura.text('Factura').effect("highlight", {color: 'yellow'}, 1000);
+                $lblIdFacturaDes.text('Número de factura: ').effect("highlight", {color: 'yellow'}, 1000);
+                $lblIdFechaFac.text('Fecha de factura: ').effect("highlight", {color: 'yellow'}, 1000);
+                $idSpanSerieCorrelativo.text('F001 - 45613').effect("highlight", {color: 'yellow'}, 1000);
+                $idSpanSerieCorrelativo.text('F001 - 45613').effect("highlight", {color: 'yellow'}, 1000);
 
             } else {
-                $lblIdFactura.text('Boleta ');
-                $lblIdFacturaDes.text('Número de boleta: ')
-                $lblIdFechaFac.text('Fecha de boleta: ');
+                $lblDocumentoTipo.text('RUC / DNI : ');
+                $lblDescriptionClient.text('Cliente : ').effect("highlight", {color: 'yellow'}, 1000);
+                $lblNumDocClient.text('RUC / DNI : ').effect("highlight", {color: 'yellow'}, 1000);
+
+                $lblIdFactura.text('Boleta ').effect("highlight", {color: 'yellow'}, 1000);;
+                $lblIdFacturaDes.text('Número de boleta: ').effect("highlight", {color: 'yellow'}, 1000);
+                $lblIdFechaFac.text('Fecha de boleta: ').effect("highlight", {color: 'yellow'}, 1000);
+                $idSpanSerieCorrelativo.text('B001 - 127').effect("highlight", {color: 'yellow'}, 1000);
             }
         });
 
@@ -1177,9 +1075,9 @@
             let $clienteDescripcion = $('#cliente-descripcion');
             let $clienteDocumento = $('#inp-buscar-cliente');
 
-            let $cliNombreModal= $('#inputCliente4');
-            let $cliRuc_dniModal= $('#inputdni4');
-            let $cliDireccionModal= $('#idDireccion');
+            let $cliNombreModal = $('#inputCliente4');
+            let $cliRuc_dniModal = $('#inputdni4');
+            let $cliDireccionModal = $('#idDireccion');
 
             let cliente_dni = {
                 'documento': '71632611',
@@ -1210,11 +1108,22 @@
             }
 
             $clienteDescripcion.val(cliente.descripcion);
-            
             $cliNombreModal.val(cliente.descripcion);
             $cliRuc_dniModal.val(cliente.documento);
             $cliDireccionModal.val(cliente.direccion);
+
+            // efecto en hoja de los cambios de datos del cliente
+            let $txtDescriptionClient = $('#txtDescriptionClient');
+            $txtDescriptionClient.text(cliente.descripcion).effect("highlight", {color: 'yellow'}, 1000);
+
         });
+
+        $('#inp-buscar-cliente').on('keyup', function () {
+            let num_doc = $(this).val();
+            $('#txtNumDocClient').text(num_doc).effect("highlight", {color: 'yellow'}, 1000);
+
+        })
+
 
         $('#tbl-productos').on('click', '.btn-quitar-producto', function (e) {
             // e.preventDefault();
@@ -1223,19 +1132,19 @@
         })
     });
 
-    function Mostrar_Direccion(valor){
+    function Mostrar_Direccion(valor) {
         document.getElementById("idDireccion").innerHTML = valor;
     }
 
-    function Mostrar_Gmail(valor){
+    function Mostrar_Gmail(valor) {
         document.getElementById("correo").innerHTML = valor;
     }
 
-    function Mostrar_Telefono(valor){
+    function Mostrar_Telefono(valor) {
         document.getElementById("telefono").innerHTML = valor;
     }
 
-    function Mostrar_Nombre(valor){
+    function Mostrar_Nombre(valor) {
         document.getElementById("idNombre").innerHTML = valor;
     }
 

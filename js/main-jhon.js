@@ -87,17 +87,24 @@ btnAddTable.addEventListener('click', function() {
 
 function calcularTotal() {
     // calculando el total y tambien el total 
-    var subTotal = document.getElementById('subTotal');
-    var igv = document.getElementById('igv');
-    var precioTotal = document.getElementById('precioTotal');
-    var total = 0;
-    var tds = tableProducts.querySelectorAll('td:nth-child(4)');
-    tds.forEach(function(td) {
-        total += parseInt(td.innerHTML);
+    let subTotal = 0;
+    let $subTotal = document.getElementById('subTotal');
+    let $igv = document.getElementById('igv');
+    let $precioTotal = document.getElementById('precioTotal');
+    let total = 0;
+    let $tds = tableProducts.querySelectorAll('td:nth-child(4)');
+
+    $tds.forEach(function($td) {
+        total += parseFloat($td.innerHTML);
     });
-    subTotal.innerHTML = total - (total * 0.18);
-    igv.innerHTML = total * 0.18;
-    precioTotal.innerHTML = total;
-    var quatityProducts = document.getElementById('quatityProducts');
-    quatityProducts.innerHTML = tds.length;
+
+    subTotal = (total / 1.18).toFixed(2);
+    $subTotal.innerHTML = subTotal;
+
+    $igv.innerHTML = (total - subTotal).toFixed(2);
+
+    $precioTotal.innerHTML = total;
+
+    let  $quatityProducts = document.getElementById('quatityProducts');
+    $quatityProducts.innerHTML = $tds.length;
 }
