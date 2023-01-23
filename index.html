@@ -430,7 +430,7 @@
                                                        onkeypress="Mostrar_Nombre(this.value)">
                                             </div>
                                             <div class="col-xl-2 col-lg-6 col-md-6">
-                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                <button type="button" class="btn btn-primary hidden" data-bs-toggle="modal"
                                                         href="#exampleModal" id="btn-editar-cliente">Editar
                                                 </button>
                                             </div>
@@ -502,13 +502,13 @@
                                                id="tbl-productos"
                                                style="min-width: 380px;">
                                             <thead>
-                                                <tr>
-                                                    <th width="5%" class="ps-4">Cantidad</th>
-                                                    <th width="65%">Descripción</th>
-                                                    <th width="10%" class="text-end">Precio Unitario</th>
-                                                    <th width="10%" class="text-end">Precio Total</th>
-                                                    <th width="10%" class="text-end">Acción</th>
-                                                </tr>
+                                            <tr>
+                                                <th width="5%" class="ps-4">Cantidad</th>
+                                                <th width="65%">Descripción</th>
+                                                <th width="10%" class="text-end">Precio Unitario</th>
+                                                <th width="10%" class="text-end">Precio Total</th>
+                                                <th width="10%" class="text-end">Acción</th>
+                                            </tr>
                                             </thead>
                                             <tbody>
                                             </tbody>
@@ -554,12 +554,10 @@
                                class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar</a>
                         </div>
                         <div class="col-12 col-md-auto ms-md-auto mt-3 mt-md-0 ms-auto">
-
-                            <button type="submit"
-                                    class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1"
-                                    data-loading-text="Loading...">
+                            <a class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">
                                 <i class="bx bx-save text-4 me-2"></i> Guardar
-                            </button>
+                            </a>
+
                         </div>
                     </div>
                 </form>
@@ -601,12 +599,14 @@
                                                 <div class="col-sm-6">
                                                     <div class="invoice-number mb-2">
                                                         <div class="info">
-                                                            <h3 class="inv-header-1" id="idFactura" style="font-weight: bold">Factura</h3>
+                                                            <h3 class="inv-header-1" id="idFactura"
+                                                                style="font-weight: bold">Factura</h3>
 
                                                             <p class="mb-1"><span
-                                                                    id="idEmpresa">RC: </span><span>20123456789</span>
+                                                                    id="idEmpresa">RUC: </span><span>20123456789</span>
                                                             <p class="mb-1"><span
-                                                                    id="idFacturaDes">Número de factura: </span><span id="idSpanSerieCorrelativo">F001 - 45613</span>
+                                                                    id="idFacturaDes">Número de factura: </span><span
+                                                                    id="idSpanSerieCorrelativo">F001 - 45613</span>
                                                             </p>
                                                             <p class="mb-0"><span
                                                                     id="idFechaFac">Fecha de factura: </span><span>24 Enero 2022</span>
@@ -623,11 +623,17 @@
                                                         <h3 class="inv-header-1"><strong> Detalles del Cliente</strong>
                                                         </h3>
                                                         <ul class="list-unstyled row">
-                                                            <li class="col-6"><strong id="lblNumDocClient">DNI / RUC : </strong><span id="txtNumDocClient"></span></li>
-                                                            <li class="col-12"><strong id="lblDescriptionClient">Razón Social : </strong><span id="txtDescriptionClient"></span></li>
-                                                            <li class="col-12"><strong id="lblDirectionClient">Dirección : </strong> <span id="txtDirectionClient"></span></li>
-                                                            <li class="col-6"><strong>Email: </strong> <span id="txtEmailClient"></span></li>
-                                                            <li class="col-6"><strong>Telefono: </strong> <span id="txtPhoneClient"></span></li>
+                                                            <li class="col-6"><strong id="lblNumDocClient">DNI / RUC
+                                                                : </strong><span id="txtNumDocClient"></span></li>
+                                                            <li class="col-12"><strong id="lblDescriptionClient">Razón
+                                                                Social : </strong><span
+                                                                    id="txtDescriptionClient"></span></li>
+                                                            <li class="col-12"><strong id="lblDirectionClient">Dirección
+                                                                : </strong> <span id="txtDirectionClient"></span></li>
+                                                            <li class="col-6"><strong>Email: </strong> <span
+                                                                    id="txtEmailClient"></span></li>
+                                                            <li class="col-6"><strong>Telefono: </strong> <span
+                                                                    id="txtPhoneClient"></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -641,14 +647,15 @@
                                                 <div class="card card-modern">
                                                     <div class="card-body">
                                                         <div class="">
-                                                            <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless mb-0" id="tbl-productos-txt" style="min-width: 380px;">
+                                                            <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless mb-0"
+                                                                   id="tbl-productos-txt" style="min-width: 380px;">
                                                                 <thead>
-                                                                    <tr>
-                                                                        <th width="4%" class="ps-4">Cantidad</th>
-                                                                        <th width="65%">Descripción</th>
-                                                                        <th width="8%" class="text-end">Precio Unitario</th>
-                                                                        <th width="8%" class="text-end">Precio Total</th>
-                                                                    </tr>
+                                                                <tr>
+                                                                    <th width="4%" class="ps-4">Cantidad</th>
+                                                                    <th width="65%">Descripción</th>
+                                                                    <th width="8%" class="text-end">Precio Unitario</th>
+                                                                    <th width="8%" class="text-end">Precio Total</th>
+                                                                </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                 </tbody>
@@ -660,7 +667,8 @@
                                                                 <h3 class="font-weight-bold text-color-dark text-4 mb-3">
                                                                     Subtotal</h3>
                                                                 <span class="d-flex align-items-center">
-                                                                        <b class="text-color-dark text-xxs" id="txtSubtotal">0.00</b>
+                                                                        <b class="text-color-dark text-xxs"
+                                                                           id="txtSubtotal">0.00</b>
                                                                     </span>
                                                             </div>
                                                             <div class="col-auto me-2">
@@ -671,9 +679,10 @@
                                                                     </span>
                                                             </div>
                                                             <div class="col-auto">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">Total</h3>
-                                                                        <strong class="text-color-dark text-5" id="txtTotal">0.00</strong>
-                                                                    </span>
+                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                    Total</h3>
+                                                                <strong class="text-color-dark text-5" id="txtTotal">0.00</strong>
+                                                                </span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -689,8 +698,8 @@
                                                         <h3 class="inv-title-1">Método de pago</h3>
                                                         <ul class="payment-method-list-1">
                                                             <li><strong>Número de cuenta:</strong> 00 123 647 840</li>
-                                                            <li><strong>Nombre de la cuenta:</strong> Jhon Doe</li>
-                                                            <li><strong>Nombre de la sucursal:</strong> xyz</li>
+                                                            <li><strong>Nombre de la cuenta:</strong> Rayon</li>
+                                                            <li><strong>Nombre de la sucursal:</strong> Peru</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -711,7 +720,7 @@
                                                 <a href="tel:info@themevessel.com" class="d-flex col me-2"><i
                                                         class="fa fa-envelope"></i> rayon@gmail.com</a>
                                                 <a href="tel:info@themevessel.com" class="mr-0 d-flex col me-2 "><i
-                                                        class="fa fa-map-marker"></i> 169 Teroghoria, Bangladesh</a>
+                                                        class="fa fa-map-marker"></i> Abancay - Apurímac - Perú</a>
                                             </div>
                                         </div>
                                     </div>
@@ -855,7 +864,7 @@
                             <div class="modal-footer">
                                 <div class="row">
                                     <div class="col-md-12 text-end">
-                                        <button class="btn btn-primary modal-confirm" data-bs-dismiss="modal"
+                                        <button class="btn btn-primary modal-confirm" data-bs-dismiss="modal" id =""
                                                 type="reset">Guardar
                                         </button>
                                         <button class="btn btn-default modal-dismiss" data-bs-dismiss="modal"
@@ -947,8 +956,6 @@
             </div>
         </div>
     </div>
-
-
 </section>
 
 <!-- Vendor -->
@@ -1010,7 +1017,8 @@
                 $lblDescriptionClient.text('Cliente : ').effect("highlight", {color: 'yellow'}, 1000);
                 $lblNumDocClient.text('RUC / DNI : ').effect("highlight", {color: 'yellow'}, 1000);
 
-                $lblIdFactura.text('Boleta ').effect("highlight", {color: 'yellow'}, 1000);;
+                $lblIdFactura.text('Boleta ').effect("highlight", {color: 'yellow'}, 1000);
+                ;
                 $lblIdFacturaDes.text('Número de boleta: ').effect("highlight", {color: 'yellow'}, 1000);
                 $lblIdFechaFac.text('Fecha de boleta: ').effect("highlight", {color: 'yellow'}, 1000);
                 $idSpanSerieCorrelativo.text('B001 - 127').effect("highlight", {color: 'yellow'}, 1000);
@@ -1077,6 +1085,8 @@
             $txtEmailClient.text(cliente.email).effect("highlight", {color: 'yellow'}, 1000);
             $txtPhoneClient.text(cliente.phone).effect("highlight", {color: 'yellow'}, 1000);
 
+            $('#btn-editar-cliente').show().removeClass('hidden');
+
         });
 
         $('#inp-buscar-cliente').on('keyup', function () {
@@ -1085,6 +1095,11 @@
 
         })
     });
+
+    // $('#btnGuardarTodo').on('click', function (e) {
+    //     e.preventDefault();
+    //
+    // });
 
     function Mostrar_Direccion(valor) {
         document.getElementById("idDireccion").innerHTML = valor;
