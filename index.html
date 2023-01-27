@@ -390,6 +390,31 @@
 
                 <form class="order-details action-buttons-fixed col-xl-7 col-md-12" method="post">
                     <div class="row">
+                    
+                        <div class="col-md-12 col-lg-4 col-xl-4">
+                            <div class="card card-modern">
+                                <div class="card-header">
+                                    <h2 class="card-title">Datos del documento</h2>
+                                </div>  
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="" role="group"
+                                             aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
+                                                   autocomplete="off" checked>
+                                            <label class="btn btn-outline-primary d-block"
+                                                   for="rdo-factura">Factura</label>
+                                            <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
+                                                   autocomplete="off">
+                                            <label class="btn btn-outline-primary d-block"
+                                                   for="rdo-boleta">Boleta</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="col-md-12 col-lg-8 col-xl-8 mb-7 mb-2">
                             <div class="card card-modern">
                                 <div class="card-header">
@@ -434,29 +459,6 @@
                                                         href="#exampleModal" id="btn-editar-cliente">Editar
                                                 </button>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-4 col-xl-4">
-                            <div class="card card-modern">
-                                <div class="card-header">
-                                    <h2 class="card-title">Datos del documento</h2>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="" role="group"
-                                             aria-label="Basic radio toggle button group">
-                                            <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
-                                                   autocomplete="off" checked>
-                                            <label class="btn btn-outline-primary d-block"
-                                                   for="rdo-factura">Factura</label>
-                                            <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
-                                                   autocomplete="off">
-                                            <label class="btn btn-outline-primary d-block"
-                                                   for="rdo-boleta">Boleta</label>
                                         </div>
                                     </div>
                                 </div>
@@ -609,7 +611,7 @@
                                                                     id="idSpanSerieCorrelativo">F001 - 45613</span>
                                                             </p>
                                                             <p class="mb-0"><span
-                                                                    id="idFechaFac">Fecha de factura: </span><span>24 Enero 2022</span>
+                                                                    id="idFechaFac">Fecha de factura: </span><span>27 Enero 2022</span>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1102,15 +1104,15 @@
     // });
 
     function Mostrar_Direccion(valor) {
-        document.getElementById("idDireccion").innerHTML = valor;
+        document.getElementById("txtDirectionClient").innerHTML = valor;
     }
 
     function Mostrar_Gmail(valor) {
-        document.getElementById("correo").innerHTML = valor;
+        document.getElementById("txtEmailClient").innerHTML = valor;
     }
 
     function Mostrar_Telefono(valor) {
-        document.getElementById("telefono").innerHTML = valor;
+        document.getElementById("txtPhoneClient").innerHTML = valor;
     }
 
     function Mostrar_Nombre(valor) {
