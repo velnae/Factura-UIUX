@@ -45,6 +45,7 @@
     <script src="vendor/modernizr/modernizr.js"></script>
 
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 <body>
@@ -569,13 +570,13 @@
     background-color: #666;
     padding: 15px 10px 90px 10px;
 ">
-                        <div class="card card-modern">
-                            <div class="card-header mb-0 pb-0">
+                        <div class="card card-modern" >
+                            <div class="card-header mb-0 pb-0" style="background-color: khaki">
                                 <h2 class="card-title">Vista Previa</h2>
                                 <hr>
                             </div>
 
-                            <div class="card-body ">
+                            <div class="card-body " style="background-color:khaki">
                                 <div class="invoice-inner clearfix pb-5">
                                     <div class="invoice-info clearfix" id="invoice_wrapper">
 
@@ -591,7 +592,7 @@
                                                     </div>
                                                     <div class="invoice-number mb-2">
                                                         <div class="info">
-                                                            <p class="invo-addr-1">
+                                                            <p class="invo-addr-1 titulos">
                                                                 Grupo Rayones S.A.C. <br/>
                                                                 Abancay - Apurímac - Perú<br/>
                                                             </p>
@@ -601,16 +602,16 @@
                                                 <div class="col-sm-6">
                                                     <div class="invoice-number mb-2">
                                                         <div class="info">
-                                                            <h3 class="inv-header-1" id="idFactura"
+                                                            <h3 class="inv-header-1 titulos" id="idFactura"
                                                                 style="font-weight: bold">Factura</h3>
 
-                                                            <p class="mb-1"><span
+                                                            <p class="mb-1 titulos"><span
                                                                     id="idEmpresa">RUC: </span><span>20123456789</span>
-                                                            <p class="mb-1"><span
+                                                            <p class="mb-1 titulos"><span
                                                                     id="idFacturaDes">Número de factura: </span><span
                                                                     id="idSpanSerieCorrelativo">F001 - 45613</span>
                                                             </p>
-                                                            <p class="mb-0"><span
+                                                            <p class="mb-0 titulos"><span
                                                                     id="idFechaFac">Fecha de factura: </span><span>27 Enero 2023</span>
                                                             </p>
                                                         </div>
@@ -622,9 +623,9 @@
                                             <div class="row">
                                                 <div class="col-md-10">
                                                     <div class="invoice-number mb-30">
-                                                        <h3 class="inv-header-1"><strong> Detalles del Cliente</strong>
+                                                        <h3 class="inv-header-1 titulos"><strong> Detalles del Cliente</strong>
                                                         </h3>
-                                                        <ul class="list-unstyled row">
+                                                        <ul class="list-unstyled row titulos">
                                                             <li class="col-6"><strong id="lblNumDocClient">DNI / RUC
                                                                 : </strong><span id="txtNumDocClient"></span></li>
                                                             <li class="col-12"><strong id="lblDescriptionClient">Razón
@@ -643,14 +644,14 @@
                                         </div>
 
                                         <!-- Albert -->
-                                        <div class="row">
-                                            <div class="col">
+                                        <div class="row " >
+                                            <div class="col" >
 
-                                                <div class="card card-modern">
-                                                    <div class="card-body">
-                                                        <div class="">
-                                                            <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless mb-0"
-                                                                   id="tbl-productos-txt" style="min-width: 380px;">
+                                                <div class="card card-modern " >
+                                                    <div class="card-body " style="background-color:khaki">
+                                                        <div class="" style="background-color:khaki">
+                                                            <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless mb-0 titulos"
+                                                                   id="tbl-productos-txt" style="min-width: 380px; background-color: khaki ">
                                                                 <thead>
                                                                 <tr>
                                                                     <th width="4%" class="ps-4">Cantidad</th>
@@ -664,26 +665,26 @@
                                                             </table>
                                                         </div>
 
-                                                        <div class="row justify-content-end flex-column flex-lg-row my-3">
+                                                        <div class="row justify-content-end flex-column flex-lg-row my-3 " style="background-color: khaki">
                                                             <div class="col-auto me-2">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                <h3 class="font-weight-bold text-4 mb-3 titulos">
                                                                     Subtotal</h3>
                                                                 <span class="d-flex align-items-center">
-                                                                        <b class="text-color-dark text-xxs"
+                                                                        <b class="titulos text-xxs"
                                                                            id="txtSubtotal">0.00</b>
                                                                     </span>
                                                             </div>
                                                             <div class="col-auto me-2">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                <h3 class="font-weight-bold  text-4 mb-3 titulos">
                                                                     Impuesto</h3>
                                                                 <span class="d-flex align-items-center">
-                                                                        <b class="text-color-dark text-xxs" id="txtIGV">0.00</b>
+                                                                        <b class="titulos text-xxs" id="txtIGV">0.00</b>
                                                                     </span>
                                                             </div>
                                                             <div class="col-auto">
-                                                                <h3 class="font-weight-bold text-color-dark text-4 mb-3">
+                                                                <h3 class="font-weight-bold titulos text-4 mb-3">
                                                                     Total</h3>
-                                                                <strong class="text-color-dark text-5" id="txtTotal">0.00</strong>
+                                                                <strong class="titulos text-5" id="txtTotal">0.00</strong>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -693,7 +694,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="invoice-bottom">
+                                        <div class="invoice-bottom titulos">
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-5 col-sm-5">
                                                     <div class="payment-method mb-30">
@@ -705,10 +706,10 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-md-7 col-sm-7">
+                                                <div class="col-lg-6 col-md-7 col-sm-7 ">
                                                     <div class="terms-conditions mb-30">
-                                                        <h3 class="inv-title-1">Términos y condiciones</h3>
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                        <h3 class="inv-title-1 titulos">Términos y condiciones</h3>
+                                                        <p class="titulos">Lorem Ipsum is simply dummy text of the printing and
                                                             typesetting industry. Lorem Ipsum has been the industry's
                                                             standard dummy has</p>
                                                     </div>
