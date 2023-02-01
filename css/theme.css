@@ -4070,7 +4070,7 @@ html.header-dark .header .separator {
 
 	.header.header-nav-menu .header-nav-main nav > ul > li > a:focus {
 		background: transparent;
-		color: #CCC;
+		color: rgb(39, 170, 91);
 	}
 
 	.header.header-nav-menu .header-nav-main nav > ul > li > a.dropdown-toggle .fa-caret-down {
@@ -7450,6 +7450,7 @@ html.dark .call-to-action.call-to-action-grey:before {
 	border-bottom: 1px solid #DADADA;
 	padding: 18px;
 	position: relative;
+	
 }
 
 .card-header.bg-white {

@@ -1,3 +1,27 @@
 .titulos {
     color: #000060;
 }
+
+.font-title {
+    background: #6DB997 ;
+	border-radius: 5px 5px 0 0 !important;
+	border-bottom: 1px solid #DADADA;
+	padding: 18px;
+	position: relative;
+	
+}
+
+.title-card {
+    color: #000060;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 0;
+	text-transform: none;
+	margin: 0;
+	font-weight: 600;
+	letter-spacing: -1px;
+}
+
+.font-header {
+    
+}
