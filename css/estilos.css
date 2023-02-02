@@ -1,6 +1,5 @@
 .titulos {
-    color: #ffffff;
-	font-family: "Source Sans Pro";
+    color: #000060;
 }
 
 .font-title {
@@ -13,8 +12,7 @@
 }
 
 .title-card {
-	font-family: "Source Sans Pro";
-    color: #ffffff;
+    color: #000060;
 	font-size: 18px;
 	line-height: 18px;
 	padding: 0;
@@ -26,4 +24,8 @@
 
 .font-header {
     
+}
+
+#menu > ul > li.nav-parent.nav-expanded > ul > li.nav-active > a {
+	color: #00aaff;
 }
