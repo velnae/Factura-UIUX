@@ -27,7 +27,7 @@
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #0a2a40;/*#0075FF;*/
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }

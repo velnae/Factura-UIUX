@@ -49,6 +49,47 @@
 
 </head>
 <body>
+    <style>
+        body{
+            color: #000 ;
+        }
+        .title-card{
+            color: #fff;
+        }
+        .font-title{
+            background: #0a2a40;
+        }
+        html .btn-primary{
+            background-color: #53748B;
+            border-color: #53748B;
+        }
+        html .btn-primary:hover{
+            background-color: #7D96A8;
+            border-color: #7D96A8;
+        }
+        html .btn-primary:focus, .btn-primary.focus{
+            box-shadow: 0 0 0 0.2rem rgba(83, 116, 139, 0.5);
+        }
+        .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show{
+            background-color: #53748B;
+            border-color: #53748B;
+            color: #fff;
+            
+        }
+        .btn-outline-primary{
+            margin-top: 5px;
+            color: #53748B;
+            border-color: #53748B;
+        }
+        .btn-outline-primary:hover{
+            background-color: #53748B;
+            border-color: #53748B;
+            color: #fff;
+        }
+        .btn-outline-primary:focus, .btn-outline-primary.focus{
+            box-shadow: 0 0 0 0.2rem rgba(95, 121, 140, 0.5);
+        }
+    </style>
 <section class="body">
 
     <!-- start: header -->
@@ -403,11 +444,11 @@
                                              aria-label="Basic radio toggle button group">
                                             <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
                                                    autocomplete="off" checked>
-                                            <label class="btn btn-outline-primary d-block"
+                                            <label class="btn btn-outline-primary d-block btn-azul"
                                                    for="rdo-factura">Factura</label>
                                             <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
                                                    autocomplete="off">
-                                            <label class="btn btn-outline-primary d-block"
+                                            <label class="btn btn-outline-primary d-block btn-azul"
                                                    for="rdo-boleta">Boleta</label>
                                         </div>
                                     </div>
@@ -554,7 +595,7 @@
                     <div class="row action-buttons" style="border-top: 1px solid #333; padding: 25px 25px">
                         <div class="col-12 col-md-auto px-md-0 mt-3 mt-md-0">
                             <a href="#"
-                               class="cancel-button btn btn-light btn-px-4 py-3 border font-weight-semibold text-color-dark text-3">Cancelar</a>
+                               class="cancel-button btn btn-info btn-px-4 py-3 border font-weight-semibold text-color-white text-3">Cancelar</a>
                         </div>
                         <div class="col-12 col-md-auto ms-md-auto mt-3 mt-md-0 ms-auto">
                             <a class="submit-button btn btn-primary btn-px-4 py-3 d-flex align-items-center font-weight-semibold line-height-1">
@@ -571,12 +612,12 @@
     padding: 15px 10px 90px 10px;
 ">
                         <div class="card card-modern" >
-                            <div class="card-header mb-0 pb-0" style="background-color:#BEC870; padding: 15px 10px 90px 10px" >
+                            <div class="card-header mb-0 pb-0" style="background-color:#FFE0B9; padding: 15px 10px 90px 10px" >
                                 <h2 class="card-title">Vista Previa</h2>
                                 <hr>
                             </div>
 
-                            <div class="card-body " style="background-color:khaki">
+                            <div class="card-body " style="background-color:#FFE0B9">
                                 <div class="invoice-inner clearfix pb-5">
                                     <div class="invoice-info clearfix" id="invoice_wrapper">
 
@@ -648,10 +689,10 @@
                                             <div class="col" >
 
                                                 <div class="card card-modern " >
-                                                    <div class="card-body " style="background-color:khaki">
-                                                        <div class="" style="background-color:khaki">
+                                                    <div class="card-body " style="background-color:#FFE0B9">
+                                                        <div class="" style="background-color:#FFE0B9">
                                                             <table class="table table-ecommerce-simple table-ecommerce-simple-border-bottom table-borderless mb-0 titulos"
-                                                                   id="tbl-productos-txt" style="min-width: 380px; background-color: khaki ">
+                                                                   id="tbl-productos-txt" style="min-width: 380px; background-color: #FFE0B9 ">
                                                                 <thead>
                                                                 <tr>
                                                                     <th width="4%" class="ps-4">Cantidad</th>
@@ -665,7 +706,7 @@
                                                             </table>
                                                         </div>
 
-                                                        <div class="row justify-content-end flex-column flex-lg-row my-3 " style="background-color: khaki">
+                                                        <div class="row justify-content-end flex-column flex-lg-row my-3 " style="background-color: #FFE0B9">
                                                             <div class="col-auto me-2">
                                                                 <h3 class="font-weight-bold text-4 mb-3 titulos">
                                                                     Subtotal</h3>
@@ -812,7 +853,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header" style="background-color:#337ab7">
+                <div class="modal-header" style="background-color:#0a2a40">
                     <h4 class="modal-title" id="exampleModalLabel" style=" font-weight: bold; color:#f8f5f5 ">
                         Cliente</h4>
                     <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
