@@ -1,5 +1,6 @@
 .titulos {
-    color: #000060;
+    color: #ffffff;
+	font-family: "Source Sans Pro";
 }
 
 .font-title {
@@ -12,7 +13,8 @@
 }
 
 .title-card {
-    color: #000060;
+	font-family: "Source Sans Pro";
+    color: #ffffff;
 	font-size: 18px;
 	line-height: 18px;
 	padding: 0;
