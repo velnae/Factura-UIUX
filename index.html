@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="modern fixed has-top-menu has-left-sidebar-half sidebar-left-collapsed">
+<html class="modern fixed has-top-menu has-left-sidebar-half sidebar-left-collapsed" lang="es">
 <head>
 
     <!-- Basic -->
@@ -11,7 +11,7 @@
     <meta name="author" content="registrar venta">
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Web Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet"
@@ -19,24 +19,24 @@
 
 
     <!-- Vendor CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/animate/animate.compat.css">
-    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css"/>
-    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css"/>
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css"/>
-    <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css"/>
-    <link rel="stylesheet" href="vendor/select2/css/select2.css"/>
-    <link rel="stylesheet" href="vendor/select2-bootstrap-theme/select2-bootstrap.min.css"/>
-    <link rel="stylesheet" href="vendor/pnotify/pnotify.custom.css"/>
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.css">
+    <link rel="stylesheet" href="vendor/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/pnotify/pnotify.custom.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css"/>
+    <link rel="stylesheet" href="css/theme.css">
 
     <!-- Theme Layout -->
-    <link rel="stylesheet" href="css/layouts/modern.css"/>
+    <link rel="stylesheet" href="css/layouts/modern.css">
 
     <!-- Skin CSS -->
-    <link rel="stylesheet" href="css/skins/default.css"/>
+    <link rel="stylesheet" href="css/skins/default.css">
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
@@ -47,8 +47,6 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/estilos.css">
 
-</head>
-<body>
     <style>
         body{
             color: #000 ;
@@ -169,7 +167,9 @@
         }
 
     </style>
-
+</head>
+<body>
+    
     
 <section class="body">
 
@@ -177,7 +177,7 @@
     <header class="header header-nav-menu header-nav-links">
         <div class="logo-container">
             <a href="index.html" class="logo">
-                <img src="img/logo-custom.png" class="logo-image" width="90" height="24" alt="Rayon"/>
+                <img src="img/logo-custom.png" class="logo-image" width="90" height="24" alt="Rayon">
             </a>
             <button class="btn header-btn-collapse-nav d-lg-none" data-bs-toggle="collapse"
                     data-bs-target=".header-nav">
@@ -357,7 +357,7 @@
                                 </li>
                             </ul>
 
-                            <hr/>
+                            <hr>
 
                             <div class="text-end">
                                 <a href="#" class="view-more">Ver todo</a>
@@ -382,8 +382,8 @@
                 </a>
 
                 <div class="dropdown-menu">
-                    <ul class="list-unstyled">
-                        <li>
+                    <ul class="list-unstyled" role="menu">
+                        <li >
                             <a role="menuitem" tabindex="-1" href="#"><i class="bx bx-user "></i>
                                 Mi perfil</a>
                         </li>
@@ -410,13 +410,13 @@
             <div class="sidebar-header">
                 <div class="sidebar-toggle d-none d-md-flex" data-toggle-class="sidebar-left-collapsed"
                      data-target="html" data-fire-event="sidebar-left-toggle">
-                    <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
 
             <div class="nano">
                 <div class="nano-content">
-                    <nav id="menu" class="nav-main" role="navigation">
+                    <nav id="menu" class="nav-main">
 
                         <ul class="nav nav-main">
                             <li>
@@ -466,7 +466,7 @@
                         </ul>
                     </nav>
 
-                    <hr class="separator"/>
+                    <hr class="separator">
 
 
                 </div>
@@ -524,11 +524,11 @@
                                         <div class="" role="group"
                                              aria-label="Basic radio toggle button group">
                                             <input type="radio" class="btn-check" name="rdo-documento" id="rdo-factura"
-                                                   autocomplete="off" checked>
+                                                   checked>
                                             <label class="btn btn-outline-primary d-block btn-azul"
                                                    for="rdo-factura">Factura</label>
                                             <input type="radio" class="btn-check" name="rdo-documento" id="rdo-boleta"
-                                                   autocomplete="off">
+                                                   >
                                             <label class="btn btn-outline-primary d-block btn-azul"
                                                    for="rdo-boleta">Boleta</label>
                                         </div>
@@ -578,9 +578,9 @@
                                                        onkeypress="Mostrar_Nombre(this.value)">
                                             </div>
                                             <div class="col-xl-2 col-lg-6 col-md-6">
-                                                <button type="button" class="btn btn-primary hidden" data-bs-toggle="modal"
+                                                <a type="button" class="btn btn-primary hidden" data-bs-toggle="modal"
                                                         href="#exampleModal" id="btn-editar-cliente">Editar
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -628,11 +628,11 @@
                                                style="min-width: 380px;">
                                             <thead>
                                             <tr>
-                                                <th width="5%" class="ps-4">Cantidad</th>
-                                                <th width="65%">Descripción</th>
-                                                <th width="10%" class="text-end">Precio Unitario</th>
-                                                <th width="10%" class="text-end">Precio Total</th>
-                                                <th width="10%" class="text-end">Acción</th>
+                                                <th style="width: 5%;" class="ps-4">Cantidad</th>
+                                                <th style="width: 65%;">Descripción</th>
+                                                <th style="width: 10%;" class="text-end">Precio Unitario</th>
+                                                <th style="width: 10%;" class="text-end">Precio Total</th>
+                                                <th style="width: 10%;" class="text-end">Acción</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -708,15 +708,15 @@
                                                     <div class="invoice-logo">
                                                         <!-- logo started -->
                                                         <div class="logo">
-                                                            <img src="img/Logo Rayon.png" alt="logo" width="140">
+                                                            <img src="./img/Logo-Rayon.png" alt="logo" width="140">
                                                         </div>
                                                         <!-- logo ended -->
                                                     </div>
                                                     <div class="invoice-number mb-2">
                                                         <div class="info">
                                                             <p class="invo-addr-1 titulos">
-                                                                Grupo Rayones S.A.C. <br/>
-                                                                Abancay - Apurímac - Perú<br/>
+                                                                Grupo Rayones S.A.C. <br>
+                                                                Abancay - Apurímac - Perú<br>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -776,10 +776,10 @@
                                                                    id="tbl-productos-txt" style="min-width: 380px; background-color: #FFE0B9 ">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th width="4%" class="ps-4">Cantidad</th>
-                                                                    <th width="65%">Descripción</th>
-                                                                    <th width="8%" class="text-end">Precio Unitario</th>
-                                                                    <th width="8%" class="text-end">Precio Total</th>
+                                                                    <th style="width: 4%;" class="ps-4">Cantidad</th>
+                                                                    <th style="width: 65%;">Descripción</th>
+                                                                    <th style="width: 8%;" class="text-end">Precio Unitario</th>
+                                                                    <th style="width: 8%;" class="text-end">Precio Total</th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -807,7 +807,7 @@
                                                                 <h3 class="font-weight-bold titulos text-4 mb-3">
                                                                     Total</h3>
                                                                 <strong class="titulos text-5" id="txtTotal">0.00</strong>
-                                                                </span>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -946,7 +946,7 @@
                             <div class="form-group col-md-11">
                                 <label for="inputCliente" class="formulario__label ">Cliente</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="cliente" class="formulario__input Fields" id="inputCliente4"
+                                    <input type="text" class="formulario__input Fields" id="inputCliente4"
                                            placeholder="Cliente"
                                            readonly>
                                 </div>
@@ -954,7 +954,7 @@
                             <div class="form-group col-md-11 mb-3 mb-lg-0">
                                 <label for="inputdni4" class="formulario__label">DNI / RUC</label>
                                 <div class="formulario__grupo-input">
-                                    <input type="dni" class="formulario__input Fields" id="inputdni4"
+                                    <input type="text" class="formulario__input Fields" id="inputdni4"
                                            placeholder="DNI / RUC" readonly>
                                 </div>
                             </div>
@@ -989,7 +989,7 @@
                             <div class="modal-footer">
                                 <div class="row">
                                     <div class="col-md-12 text-end">
-                                        <button class="btn btn-primary modal-confirm" data-bs-dismiss="modal" id =""
+                                        <button class="btn btn-primary modal-confirm" data-bs-dismiss="modal"
                                                 type="reset">Guardar
                                         </button>
                                         <button class="btn btn-default modal-dismiss" data-bs-dismiss="modal"
