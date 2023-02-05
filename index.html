@@ -11,7 +11,8 @@
     <meta name="author" content="registrar venta">
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Web Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,600,700,800,900" rel="stylesheet"
@@ -578,9 +579,9 @@
                                                        onkeypress="Mostrar_Nombre(this.value)">
                                             </div>
                                             <div class="col-xl-2 col-lg-6 col-md-6">
-                                                <a type="button" class="btn btn-primary hidden" data-bs-toggle="modal"
-                                                        href="#exampleModal" id="btn-editar-cliente">Editar
-                                                </a>
+                                                <button type="button" class="btn btn-primary hidden" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal" id="btn-editar-cliente">Editar
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -944,7 +945,7 @@
                     <form id="formulario">
                         <div class="form-group">
                             <div class="form-group col-md-11">
-                                <label for="inputCliente" class="formulario__label ">Cliente</label>
+                                <label for="inputCliente4" class="formulario__label ">Cliente</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="formulario__input Fields" id="inputCliente4"
                                            placeholder="Cliente"
@@ -967,7 +968,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-md-11" id="grupo__correo">
-                                <label for="correo" class="formulario__label">Email</label>
+                                <label for="correoModal" class="formulario__label">Email</label>
                                 <div class="formulario__grupo-input">
                                     <input type="email" class="formulario__input" name="correo" id="correoModal"
                                            placeholder="empresa@gmail.com" onkeyup="Mostrar_Gmail(this.value)">
@@ -977,7 +978,7 @@
                                     puntos, guiones y guion bajo.</p>
                             </div>
                             <div class="form-group col-md-11" id="grupo__telefono">
-                                <label for="telefono" class="formulario__label">Celular</label>
+                                <label for="telefonoModal" class="formulario__label">Celular</label>
                                 <div class="formulario__grupo-input">
                                     <input type="text" class="formulario__input" name="telefono" id="telefonoModal"
                                            placeholder="987654321" onkeyup="Mostrar_Telefono(this.value)">
